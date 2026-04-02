@@ -1,0 +1,180 @@
+{
+  "project": "08_supply_chain_injection",
+  "description": "XStream 1.4.17 (15+ RCEs de deserializacion) + Netty 4.1.42 (HTTP smuggling) + Commons IO 2.6 (path traversal)",
+  "attack_vector": "Deserializacion XML sin restricciones + HTTP request smuggling + path traversal en archivos",
+  "difficulty": "MEDIUM — XStream tiene tantos CVEs que es dificil de ignorar, Netty es mas sutil",
+  "expected_cves": [
+    "CVE-2019-20444",
+    "CVE-2021-21290",
+    "CVE-2021-29425",
+    "CVE-2021-39139",
+    "CVE-2021-39140",
+    "CVE-2021-39141",
+    "CVE-2021-39144",
+    "CVE-2021-39145",
+    "CVE-2021-39146",
+    "CVE-2021-39147",
+    "CVE-2021-39148",
+    "CVE-2021-39149",
+    "CVE-2021-39150",
+    "CVE-2021-39151",
+    "CVE-2021-39152",
+    "CVE-2021-39153",
+    "CVE-2021-39154",
+    "CVE-2021-43797",
+    "CVE-2021-43859",
+    "CVE-2022-24823",
+    "CVE-2022-40151",
+    "CVE-2022-41966",
+    "CVE-2024-29025",
+    "CVE-2024-47072",
+    "CVE-2024-47554",
+    "CVE-2025-58056",
+    "CVE-2025-67735",
+    "CVE-2026-33870"
+  ],
+  "ground_truth_source": "OSV API (api.osv.dev) — consulta independiente",
+  "ground_truth_count": 28,
+  "ground_truth_details": [
+    {
+      "cve_id": "CVE-2019-20444",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-21290",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-29425",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39139",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39140",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39141",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39144",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39145",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39146",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39147",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39148",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39149",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39150",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39151",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39152",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39153",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-39154",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-43797",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-43859",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-24823",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-40151",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-41966",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2024-29025",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2024-47072",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2024-47554",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-58056",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-67735",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2026-33870",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    }
+  ]
+}

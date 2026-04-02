@@ -1,0 +1,8 @@
+{
+  "project": "09_crypto_weak_gradle",
+  "description": "Proyecto GRADLE — Bouncy Castle descontinuado + XML Signature XXE + Logback JNDI + Spring LDAP injection + crypto DES/ECB debil",
+  "attack_vector": "Crypto debil (DES/ECB) + XXE en XML signatures + JNDI injection via Logback + LDAP injection",
+  "difficulty": "HARD — Gradle (no Maven), multiples vectores sutiles, crypto que funciona pero es insegura",
+  "expected_cves": [],
+  "ground_truth_source": "OSV API — pendiente regenerar"
+}

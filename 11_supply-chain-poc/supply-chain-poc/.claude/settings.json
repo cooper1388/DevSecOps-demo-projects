@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python run_pipeline.py *)",
+      "Bash(python test_pipeline.py)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(pip freeze)",
+      "Bash(git *)"
+    ]
+  }
+}

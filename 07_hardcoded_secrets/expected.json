@@ -1,0 +1,78 @@
+{
+  "project": "07_hardcoded_secrets",
+  "description": "Secrets hardcodeados (AWS keys, DB creds, JWT secret, GitHub token) + SnakeYAML RCE + Gson DoS",
+  "attack_vector": "Secrets en codigo fuente + YAML constructor injection + DoS via JSON parsing",
+  "difficulty": "MEDIUM — CVEs detectables, secrets requieren analisis de codigo",
+  "expected_cves": [
+    "CVE-2020-10693",
+    "CVE-2022-1471",
+    "CVE-2022-25647",
+    "CVE-2022-25857",
+    "CVE-2022-38749",
+    "CVE-2022-38750",
+    "CVE-2022-38751",
+    "CVE-2022-38752",
+    "CVE-2022-41854",
+    "CVE-2023-1932",
+    "CVE-2025-35036"
+  ],
+  "ground_truth_source": "OSV API (api.osv.dev) — consulta independiente",
+  "ground_truth_count": 11,
+  "ground_truth_details": [
+    {
+      "cve_id": "CVE-2020-10693",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-1471",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-25647",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-25857",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-38749",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-38750",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-38751",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-38752",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2022-41854",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2023-1932",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-35036",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    }
+  ]
+}

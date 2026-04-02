@@ -1,0 +1,72 @@
+{
+  "project": "02_struts2_ognl",
+  "description": "Struts2 2.5.25 — OGNL injection RCE + file upload path traversal. 10+ CVEs criticos.",
+  "attack_vector": "OGNL expression injection via HTTP parameters + path traversal en file upload",
+  "difficulty": "EASY — CVEs bien documentadas en todas las DBs",
+  "expected_cves": [
+    "CVE-2020-17530",
+    "CVE-2021-31805",
+    "CVE-2023-34149",
+    "CVE-2023-34396",
+    "CVE-2023-41835",
+    "CVE-2023-50164",
+    "CVE-2024-53677",
+    "CVE-2025-64775",
+    "CVE-2025-66675",
+    "CVE-2025-68493"
+  ],
+  "ground_truth_source": "OSV API (api.osv.dev) — consulta independiente",
+  "ground_truth_count": 10,
+  "ground_truth_details": [
+    {
+      "cve_id": "CVE-2020-17530",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2021-31805",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2023-34149",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2023-34396",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2023-41835",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2023-50164",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2024-53677",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-64775",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-66675",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    },
+    {
+      "cve_id": "CVE-2025-68493",
+      "severity": "UNKNOWN",
+      "source": "OSV"
+    }
+  ]
+}

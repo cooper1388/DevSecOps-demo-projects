@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BENCHMARK: Supply Chain Injection — dependencias con alto riesgo de compromiso -->
+<!-- Mezcla: deps con bus factor 1, repos con poca actividad, y vulns conocidas -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>supply-chain-injection</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Netty viejo — HTTP smuggling, info leak, DoS -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http</artifactId>
+            <version>4.1.42.Final</version>
+        </dependency>
+        <!-- Commons IO viejo — path traversal -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <!-- Xstream viejo — deserializacion remota, multiples RCE -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.17</version>
+        </dependency>
+    </dependencies>
+</project>
