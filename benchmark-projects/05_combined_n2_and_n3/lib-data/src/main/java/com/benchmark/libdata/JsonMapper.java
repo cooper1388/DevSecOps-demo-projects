@@ -3,6 +3,7 @@ package com.benchmark.libdata;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import java.io.IOException;
 
 /**
  * Utilidad de mapeo JSON usando Jackson.
@@ -29,7 +30,7 @@ public class JsonMapper {
     public <T> T fromJson(String json, Class<T> clazz) {
         try {
             return mapper.readValue(json, clazz);
-        } catch (JsonProcessingException e) {
+        } catch (IOException e) {
             throw new RuntimeException("Error deserializando JSON", e);
         }
     }

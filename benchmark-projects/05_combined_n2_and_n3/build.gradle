@@ -3,6 +3,19 @@
 // Estructura: app → lib-service(N1,limpio) → lib-data(N2,limpio) + snakeyaml:1.30(N2,VULNERABLE)
 //             lib-data depende de jackson-databind:2.9.8(N3,VULNERABLE)
 
+plugins {
+    id 'org.sonarqube' version '7.2.3.7755'
+}
+
+sonar {
+    properties {
+        property 'sonar.projectKey', '05_combined_n2_and_n3'
+        property 'sonar.projectName', '05_combined_n2_and_n3'
+        property 'sonar.host.url', 'http://localhost:9000'
+        property 'sonar.token', 'sqp_a7fe7055baae6f1a9929efc328cb4cf554ac4fcd'
+    }
+}
+
 allprojects {
     group = 'com.benchmark'
     version = '1.0.0'
@@ -11,8 +24,10 @@ allprojects {
 subprojects {
     apply plugin: 'java'
 
-    sourceCompatibility = '11'
-    targetCompatibility = '11'
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
 
     repositories {
         mavenCentral()

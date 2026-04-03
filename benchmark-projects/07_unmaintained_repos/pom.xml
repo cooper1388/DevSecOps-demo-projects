@@ -47,7 +47,7 @@
         <!-- 0 CVEs conocidos, repositorio con actividad minima -->
         <!-- Riesgo: mantenedor unico, sin releases en 8+ anos -->
         <dependency>
-            <groupId>com.thoughtworks</groupId>
+            <groupId>com.thoughtworks.paranamer</groupId>
             <artifactId>paranamer</artifactId>
             <version>2.8</version>
         </dependency>

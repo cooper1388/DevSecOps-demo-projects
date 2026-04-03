@@ -1,0 +1,13 @@
+{
+  "projectName": ":app",
+  "isRootProject": false,
+  "compileClasspath": [
+    "C:\\projects\\maestria\\paper\\DevSecOps-demo-projects\\benchmark-projects\\05_combined_n2_and_n3\\lib-service\\build\\libs\\lib-service-1.0.0.jar"
+  ],
+  "testCompileClasspath": [
+    "C:\\projects\\maestria\\paper\\DevSecOps-demo-projects\\benchmark-projects\\05_combined_n2_and_n3\\app\\build\\classes\\java\\main",
+    "C:\\projects\\maestria\\paper\\DevSecOps-demo-projects\\benchmark-projects\\05_combined_n2_and_n3\\lib-service\\build\\libs\\lib-service-1.0.0.jar"
+  ],
+  "mainLibraries": [],
+  "testLibraries": []
+}
