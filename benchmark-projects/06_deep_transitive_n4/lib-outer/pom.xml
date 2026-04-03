@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lib-outer: Capa externa, solo depende de lib-middle -->
+<!-- No introduce dependencias vulnerables propias -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n4-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>lib-outer</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.benchmark</groupId>
+            <artifactId>lib-middle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

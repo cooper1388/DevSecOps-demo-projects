@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BENCHMARK CASO 2: Vulnerabilidades en N1 (directa) y N2 (transitiva inmediata) -->
+<!-- struts2-core 2.5.25 → N1 con CVEs de OGNL injection -->
+<!-- struts2-core trae commons-fileupload:1.4 → N2 con CVE-2023-24998 -->
+<!-- struts2-core trae ognl:3.1.29 → N2 potencialmente vulnerable -->
+<!-- xstream 1.4.17 → N1 con 15+ CVEs de deserializacion -->
+<!-- xstream trae xpp3:1.1.4c → N2 relacionado con CVE-2022-40152 familia XPP -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>vuln-n1-y-n2</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- N1 VULNERABLE: Struts2 Core 2.5.25 — OGNL injection (CVE-2020-17530, CVE-2021-31805, etc.) -->
+        <!-- N2 VULNERABLE (transitiva): commons-fileupload:1.4 — CVE-2023-24998 (DoS) -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.5.25</version>
+        </dependency>
+
+        <!-- N1 VULNERABLE: XStream 1.4.17 — 15+ CVEs de deserializacion (CVE-2021-39139..39154) -->
+        <!-- N2 VULNERABLE (transitiva): xpp3_min:1.1.4c — procesador XML con vulnerabilidades -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.17</version>
+        </dependency>
+    </dependencies>
+</project>

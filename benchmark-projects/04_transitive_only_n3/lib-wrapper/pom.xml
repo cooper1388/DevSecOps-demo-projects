@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lib-wrapper: Modulo facade que envuelve lib-core -->
+<!-- Este modulo NO tiene dependencias vulnerables propias -->
+<!-- Solo depende de lib-core (que internamente usa commons-collections vulnerable) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n3-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>lib-wrapper</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Modulo interno limpio — la vulnerabilidad esta en las deps de lib-core -->
+        <dependency>
+            <groupId>com.benchmark</groupId>
+            <artifactId>lib-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

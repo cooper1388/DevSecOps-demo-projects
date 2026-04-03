@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BENCHMARK CASO 3: Vulnerabilidades SOLO en transitivas de primer nivel (N2) -->
+<!-- Las dependencias directas (N1) son starters/aggregators SIN CVEs propios -->
+<!-- spring-boot-starter-web:2.6.6 (N1 limpio) trae: -->
+<!--   snakeyaml:1.29 (N2) → CVE-2022-1471, CVE-2022-25857, CVE-2022-38749..52 -->
+<!--   spring-webmvc:5.3.17 (N2) → CVE-2022-22965 (Spring4Shell) -->
+<!--   tomcat-embed-core:9.0.60 (N2) → multiples CVEs -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>vuln-solo-n2</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- N1 LIMPIO: Spring Boot Starter Web es un POM aggregador sin codigo propio -->
+        <!-- Sus transitivas N2 SI tienen CVEs: snakeyaml, spring-webmvc, tomcat-embed -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.6.6</version>
+        </dependency>
+
+        <!-- N1 LIMPIO: Spring Boot Starter Validation es un POM aggregador -->
+        <!-- Su transitiva N2 hibernate-validator:6.2.3.Final puede tener CVEs -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <version>2.6.6</version>
+        </dependency>
+    </dependencies>
+</project>

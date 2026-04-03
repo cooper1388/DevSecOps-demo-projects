@@ -1,0 +1,34 @@
+{
+  "project": "01_vuln_directa_n1",
+  "scenario": "Vulnerabilidades exclusivamente en dependencias directas (N1)",
+  "difficulty": "EASY",
+  "vulnerability_levels": {
+    "N1_direct": true,
+    "N2_transitive": false,
+    "N3_deep_transitive": false,
+    "N4_very_deep": false
+  },
+  "dependencies": [
+    {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "version": "2.14.1",
+      "level": "N1",
+      "has_cves": true
+    },
+    {
+      "groupId": "org.apache.commons",
+      "artifactId": "commons-text",
+      "version": "1.9",
+      "level": "N1",
+      "has_cves": true
+    }
+  ],
+  "expected_cves": [
+    "CVE-2021-44228",
+    "CVE-2021-45046",
+    "CVE-2021-45105",
+    "CVE-2022-42889"
+  ],
+  "ground_truth_source": "NVD + OSV API"
+}

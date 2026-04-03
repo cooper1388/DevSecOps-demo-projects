@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lib-core: Modulo interno que usa commons-collections 3.2.1 (VULNERABLE) -->
+<!-- Este modulo simula una libreria interna de la organizacion que depende -->
+<!-- de una version antigua de commons-collections con CVEs conocidos -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n3-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>lib-core</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- VULNERABLE: commons-collections 3.2.1 -->
+        <!-- CVE-2015-6420, CVE-2015-7501 (deserializacion RCE via InvokerTransformer) -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <!-- VULNERABLE: commons-beanutils 1.9.3 -->
+        <!-- CVE-2014-0114, CVE-2019-10086 -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+    </dependencies>
+</project>

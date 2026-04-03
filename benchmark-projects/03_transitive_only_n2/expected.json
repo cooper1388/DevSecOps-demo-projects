@@ -1,0 +1,55 @@
+{
+  "project": "03_vuln_solo_n2",
+  "scenario": "Vulnerabilidades SOLO en dependencias transitivas de primer nivel (N2), dependencias directas limpias",
+  "difficulty": "MEDIUM-HARD",
+  "vulnerability_levels": {
+    "N1_direct": false,
+    "N2_transitive": true,
+    "N3_deep_transitive": true,
+    "N4_very_deep": false
+  },
+  "direct_dependencies_clean": [
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-web",
+      "version": "2.6.6",
+      "level": "N1",
+      "has_cves": false,
+      "note": "POM aggregador sin codigo propio"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-validation",
+      "version": "2.6.6",
+      "level": "N1",
+      "has_cves": false,
+      "note": "POM aggregador sin codigo propio"
+    }
+  ],
+  "transitive_vulnerable": [
+    {
+      "groupId": "org.yaml",
+      "artifactId": "snakeyaml",
+      "version": "1.29",
+      "level": "N2-N3",
+      "has_cves": true,
+      "key_cves": ["CVE-2022-1471", "CVE-2022-25857"]
+    },
+    {
+      "groupId": "org.springframework",
+      "artifactId": "spring-webmvc",
+      "version": "5.3.17",
+      "level": "N2",
+      "has_cves": true,
+      "key_cves": ["CVE-2022-22965"]
+    },
+    {
+      "groupId": "org.apache.tomcat.embed",
+      "artifactId": "tomcat-embed-core",
+      "version": "9.0.60",
+      "level": "N2-N3",
+      "has_cves": true
+    }
+  ],
+  "ground_truth_source": "NVD + OSV API"
+}

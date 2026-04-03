@@ -1,0 +1,5 @@
+rootProject.name = 'vuln-n2-y-n3'
+
+include 'lib-data'
+include 'lib-service'
+include 'app'

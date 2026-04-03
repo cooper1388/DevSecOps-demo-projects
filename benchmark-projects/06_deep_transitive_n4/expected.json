@@ -1,0 +1,50 @@
+{
+  "project": "06_vuln_solo_n4",
+  "scenario": "Vulnerabilidades SOLO en el cuarto nivel (N4) del arbol de dependencias",
+  "difficulty": "VERY HARD",
+  "build_type": "multi-module Maven (4 niveles)",
+  "analysis_target": "app/pom.xml",
+  "vulnerability_levels": {
+    "N1_direct": false,
+    "N2_transitive": false,
+    "N3_deep_transitive": false,
+    "N4_very_deep": true
+  },
+  "dependency_chain": [
+    {
+      "artifactId": "lib-outer",
+      "level": "N1",
+      "has_cves": false,
+      "type": "internal module"
+    },
+    {
+      "artifactId": "lib-middle",
+      "level": "N2",
+      "has_cves": false,
+      "type": "internal module"
+    },
+    {
+      "artifactId": "lib-deep",
+      "level": "N3",
+      "has_cves": false,
+      "type": "internal module"
+    },
+    {
+      "groupId": "commons-collections",
+      "artifactId": "commons-collections",
+      "version": "3.2.1",
+      "level": "N4",
+      "has_cves": true,
+      "key_cves": ["CVE-2015-6420", "CVE-2015-7501"]
+    },
+    {
+      "groupId": "commons-io",
+      "artifactId": "commons-io",
+      "version": "2.6",
+      "level": "N4",
+      "has_cves": true,
+      "key_cves": ["CVE-2021-29425"]
+    }
+  ],
+  "ground_truth_source": "NVD + OSV API"
+}

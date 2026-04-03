@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- app: Solo depende de lib-outer (N1) -->
+<!-- Cadena completa: app → lib-outer(N1) → lib-middle(N2) → lib-deep(N3) → commons-collections(N4) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n4-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>app</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.benchmark</groupId>
+            <artifactId>lib-outer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

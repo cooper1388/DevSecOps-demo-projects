@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BENCHMARK CASO 6: Vulnerabilidades SOLO en el cuarto nivel (N4) -->
+<!-- Cadena: app → lib-outer → lib-middle → lib-deep → commons-collections:3.2.1 -->
+<!-- Solo commons-collections en N4 tiene CVEs conocidos -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>vuln-solo-n4-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>lib-deep</module>
+        <module>lib-middle</module>
+        <module>lib-outer</module>
+        <module>app</module>
+    </modules>
+</project>

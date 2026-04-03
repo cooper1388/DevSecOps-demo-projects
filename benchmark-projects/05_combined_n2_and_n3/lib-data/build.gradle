@@ -1,0 +1,12 @@
+// lib-data: Modulo de acceso a datos
+// Depende de jackson-databind:2.9.8 que tiene CVEs (sera N3 desde app)
+// Depende de hibernate-validator:6.0.18.Final que tiene CVEs (sera N3 desde app)
+
+dependencies {
+    // VULNERABLE: jackson-databind 2.9.8 — multiples CVEs de deserializacion
+    // CVE-2019-12086, CVE-2019-14379, CVE-2020-36518, CVE-2022-42003, etc.
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+
+    // VULNERABLE: hibernate-validator 6.0.18.Final — CVE-2020-10693
+    implementation 'org.hibernate.validator:hibernate-validator:6.0.18.Final'
+}

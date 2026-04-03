@@ -1,0 +1,67 @@
+{
+  "project": "07_repo_sin_mantenimiento",
+  "scenario": "Riesgo por repositorios poco mantenidos/abandonados SIN CVEs activos",
+  "difficulty": "SPECIALIZED",
+  "vulnerability_levels": {
+    "N1_direct": false,
+    "N2_transitive": false,
+    "N3_deep_transitive": false,
+    "N4_very_deep": false
+  },
+  "risk_type": "supply_chain_maintenance",
+  "expected_cves": [],
+  "dependencies": [
+    {
+      "groupId": "oro",
+      "artifactId": "oro",
+      "version": "2.0.8",
+      "level": "N1",
+      "has_cves": false,
+      "last_release": "2003",
+      "status": "Apache Attic (retired)",
+      "risk": "No active maintainers, project officially retired"
+    },
+    {
+      "groupId": "com.google.code.findbugs",
+      "artifactId": "jsr305",
+      "version": "3.0.2",
+      "level": "N1",
+      "has_cves": false,
+      "last_release": "2017",
+      "status": "Abandoned by Google",
+      "risk": "No active maintainers, JSR never standardized"
+    },
+    {
+      "groupId": "net.jcip",
+      "artifactId": "jcip-annotations",
+      "version": "1.0",
+      "level": "N1",
+      "has_cves": false,
+      "last_release": "2007",
+      "status": "Single release, no active repo",
+      "risk": "Impossible to report or fix security issues"
+    },
+    {
+      "groupId": "com.thoughtworks",
+      "artifactId": "paranamer",
+      "version": "2.8",
+      "level": "N1",
+      "has_cves": false,
+      "last_release": "2017",
+      "status": "Minimal maintenance",
+      "risk": "Single inactive maintainer, bytecode access"
+    },
+    {
+      "groupId": "net.sf.opencsv",
+      "artifactId": "opencsv",
+      "version": "2.3",
+      "level": "N1",
+      "has_cves": false,
+      "last_release": "2011",
+      "status": "Namespace migrated to com.opencsv",
+      "risk": "Abandoned namespace, potential namespace hijacking"
+    }
+  ],
+  "ground_truth_source": "GitHub + Maven Central metadata",
+  "note": "Este proyecto NO tiene CVEs. Evalua capacidades de analisis de riesgo de supply chain mas alla de vulnerabilidades conocidas."
+}

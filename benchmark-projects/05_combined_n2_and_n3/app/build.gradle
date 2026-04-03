@@ -1,0 +1,9 @@
+// app: Modulo principal
+// Solo depende de lib-service (N1, limpio)
+// Las vulnerabilidades estan en N2 (snakeyaml, gson via lib-service)
+// y en N3 (jackson-databind, hibernate-validator via lib-service → lib-data)
+
+dependencies {
+    // N1 LIMPIO: lib-service es modulo interno sin CVEs
+    implementation project(':lib-service')
+}

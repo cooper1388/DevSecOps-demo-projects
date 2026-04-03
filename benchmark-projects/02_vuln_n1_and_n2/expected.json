@@ -1,0 +1,47 @@
+{
+  "project": "02_vuln_n1_y_n2",
+  "scenario": "Vulnerabilidades en dependencias directas (N1) y transitivas inmediatas (N2)",
+  "difficulty": "MEDIUM",
+  "vulnerability_levels": {
+    "N1_direct": true,
+    "N2_transitive": true,
+    "N3_deep_transitive": false,
+    "N4_very_deep": false
+  },
+  "dependencies": [
+    {
+      "groupId": "org.apache.struts",
+      "artifactId": "struts2-core",
+      "version": "2.5.25",
+      "level": "N1",
+      "has_cves": true,
+      "key_cves": ["CVE-2020-17530", "CVE-2021-31805", "CVE-2023-50164"]
+    },
+    {
+      "groupId": "com.thoughtworks.xstream",
+      "artifactId": "xstream",
+      "version": "1.4.17",
+      "level": "N1",
+      "has_cves": true,
+      "key_cves": ["CVE-2021-39139", "CVE-2021-39154", "CVE-2022-41966"]
+    },
+    {
+      "groupId": "commons-fileupload",
+      "artifactId": "commons-fileupload",
+      "version": "1.4",
+      "level": "N2",
+      "parent": "struts2-core",
+      "has_cves": true,
+      "key_cves": ["CVE-2023-24998"]
+    },
+    {
+      "groupId": "xpp3",
+      "artifactId": "xpp3_min",
+      "version": "1.1.4c",
+      "level": "N2",
+      "parent": "xstream",
+      "has_cves": true
+    }
+  ],
+  "ground_truth_source": "NVD + OSV API"
+}

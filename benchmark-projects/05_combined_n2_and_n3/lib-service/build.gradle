@@ -1,0 +1,14 @@
+// lib-service: Modulo de logica de negocio
+// Depende de lib-data (transitiva vulnerable en N3 desde app)
+// Depende de snakeyaml:1.30 directamente (sera N2 vulnerable desde app)
+
+dependencies {
+    // Modulo interno limpio
+    implementation project(':lib-data')
+
+    // VULNERABLE: snakeyaml 1.30 — CVE-2022-1471 (RCE), CVE-2022-25857, CVE-2022-38749..52
+    implementation 'org.yaml:snakeyaml:1.30'
+
+    // VULNERABLE: gson 2.8.6 — CVE-2022-25647 (DoS)
+    implementation 'com.google.code.gson:gson:2.8.6'
+}

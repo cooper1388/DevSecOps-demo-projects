@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- app: Modulo principal que solo depende de lib-wrapper -->
+<!-- Desde la perspectiva de este modulo: -->
+<!-- N1: lib-wrapper (limpio) -->
+<!-- N2: lib-core (limpio) -->
+<!-- N3: commons-collections:3.2.1 (VULNERABLE), commons-beanutils:1.9.3 (VULNERABLE) -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n3-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>app</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- N1 LIMPIO: lib-wrapper no tiene CVEs -->
+        <!-- N2 (transitiva): lib-core tampoco tiene CVEs -->
+        <!-- N3 (transitiva profunda): commons-collections:3.2.1 SI tiene CVEs -->
+        <dependency>
+            <groupId>com.benchmark</groupId>
+            <artifactId>lib-wrapper</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

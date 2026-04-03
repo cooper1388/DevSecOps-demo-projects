@@ -1,0 +1,44 @@
+{
+  "project": "04_vuln_solo_n3",
+  "scenario": "Vulnerabilidades SOLO en el tercer nivel (N3) del arbol de dependencias",
+  "difficulty": "HARD",
+  "build_type": "multi-module Maven",
+  "analysis_target": "app/pom.xml",
+  "vulnerability_levels": {
+    "N1_direct": false,
+    "N2_transitive": false,
+    "N3_deep_transitive": true,
+    "N4_very_deep": false
+  },
+  "dependency_chain": [
+    {
+      "artifactId": "lib-wrapper",
+      "level": "N1",
+      "has_cves": false,
+      "type": "internal module"
+    },
+    {
+      "artifactId": "lib-core",
+      "level": "N2",
+      "has_cves": false,
+      "type": "internal module"
+    },
+    {
+      "groupId": "commons-collections",
+      "artifactId": "commons-collections",
+      "version": "3.2.1",
+      "level": "N3",
+      "has_cves": true,
+      "key_cves": ["CVE-2015-6420", "CVE-2015-7501"]
+    },
+    {
+      "groupId": "commons-beanutils",
+      "artifactId": "commons-beanutils",
+      "version": "1.9.3",
+      "level": "N3",
+      "has_cves": true,
+      "key_cves": ["CVE-2014-0114", "CVE-2019-10086"]
+    }
+  ],
+  "ground_truth_source": "NVD + OSV API"
+}

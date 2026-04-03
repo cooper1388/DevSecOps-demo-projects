@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lib-deep: Nivel mas profundo, depende de librerias con CVEs -->
+<!-- Desde app, estas dependencias estan en N4 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n4-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>lib-deep</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- VULNERABLE: commons-collections 3.2.1 — CVE-2015-6420, CVE-2015-7501 -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <!-- VULNERABLE: commons-io 2.6 — CVE-2021-29425 (path traversal) -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lib-middle: Capa intermedia, solo depende de lib-deep -->
+<!-- No introduce dependencias vulnerables propias -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.benchmark</groupId>
+        <artifactId>vuln-solo-n4-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>lib-middle</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.benchmark</groupId>
+            <artifactId>lib-deep</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BENCHMARK CASO 4: Vulnerabilidades SOLO en el tercer nivel (N3) -->
+<!-- Estructura multi-modulo para simular cadena de dependencias reales: -->
+<!-- app (N1) → lib-wrapper (N2, limpio) → lib-core (N3, limpio) → commons-collections:3.2.1 (N3 dep directa de lib-core) -->
+<!-- Desde la perspectiva de 'app', commons-collections esta en N3 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>vuln-solo-n3-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>lib-core</module>
+        <module>lib-wrapper</module>
+        <module>app</module>
+    </modules>
+</project>
