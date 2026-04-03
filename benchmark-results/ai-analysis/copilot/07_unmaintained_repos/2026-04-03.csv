@@ -1,0 +1,2 @@
+scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
+2026-04-03,07_unmaintained_repos,oro,oro,2.0.8,N1,N/A,N/A,N/A,No CVEs conocidos al momento del analisis. Libreria abandonada sin mantenimiento activo.,N/A,N/A
