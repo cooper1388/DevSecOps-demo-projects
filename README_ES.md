@@ -33,17 +33,45 @@ app (pom.xml / build.gradle)
 - **N1**: Declarada directamente en el archivo de build
 - **N2**: Dependencia transitiva inmediata (dependencia de una dependencia directa)
 - **N3**: Dos niveles de profundidad en el arbol transitivo
-- **N4**: Tres o mas niveles de profundidad — frecuentemente mas alla del alcance por defecto del analisis SCA
+- **N4**: Tres niveles de profundidad -- frecuentemente mas alla del alcance por defecto del analisis SCA
+- **N5**: Cuatro niveles de profundidad -- solo Supply Chain Agentic alcanza este nivel
+
+## Resultados Mas Recientes (2026-04-03)
+
+| Proyecto | Supply Chain Agentic | GitHub Copilot | Claude Opus 4 |
+|---|:---:|:---:|:---:|
+| 01_direct_vuln_n1 | **38** | 6 | 5 |
+| 02_vuln_n1_and_n2 | **61** | 32 | 28 |
+| 03_transitive_only_n2 | **100** | 42 | 30 |
+| 04_transitive_only_n3 | **11** | 5 | 4 |
+| 05_combined_n2_and_n3 | **99** | 61 | 57 |
+| 06_deep_transitive_n4 | **5** | 4 | 4 |
+| 07_unmaintained_repos | **1** | 0 | 0 |
+| **TOTAL** | **315** | **150** | **128** |
+
+Ground truth recall: **100%** en los 7 proyectos para Supply Chain Agentic.
+
+## Ejecutar el Benchmark
+
+```bash
+# Benchmark completo (7 proyectos)
+python benchmark/run_benchmark.py
+
+# Un solo proyecto
+python benchmark/run_benchmark.py --project 04_transitive_only_n3
+```
+
+Genera CSV + README por proyecto en `benchmark-results/ai-analysis/supply_chain_agentic/`.
 
 ## Resultados del Benchmark
 
-La carpeta `benchmark-results/` contiene resultados de diferentes analisis realizados con herramientas SCA sobre estos proyectos. Estos resultados sirven como linea base para comparar la efectividad de las herramientas entre escenarios.
+La carpeta `benchmark-results/` contiene resultados de 3 analisis basados en IA:
 
-Cada conjunto de resultados incluye:
-- Nombre y version de la herramienta utilizada
-- Fecha de analisis
-- CVEs detectados vs. esperados por proyecto
-- Tasa de deteccion por nivel de profundidad de dependencia (N1 a N4)
+- [`supply_chain_agentic/`](benchmark-results/ai-analysis/supply_chain_agentic/) -- Pipeline automatizado (315 CVEs, profundidad N0-N5)
+- [`copilot/`](benchmark-results/ai-analysis/copilot/) -- GitHub Copilot + appmod-validate-cves-for-java (150 CVEs)
+- [`claude/`](benchmark-results/ai-analysis/claude/) -- Claude Opus 4 analisis LLM (128 CVEs)
+
+Cada conjunto incluye archivos CSV y README por proyecto con detalle de deteccion.
 
 > Los resultados deben interpretarse considerando la fecha de analisis, ya que las bases de datos de CVEs se actualizan continuamente.
 

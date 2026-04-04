@@ -1,12 +1,12 @@
 scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
 2026-04-03,04_transitive_only_n3,commons-collections,commons-collections,3.2.1,N1,CVE-2015-6420,HIGH,deserialization,Insecure Deserialization in Apache Commons Collection,3.2.2,https://nvd.nist.gov/vuln/detail/CVE-2015-6420
 2026-04-03,04_transitive_only_n3,commons-collections,commons-collections,3.2.1,N1,CVE-2015-7501,CRITICAL,deserialization,Deserialization of Untrusted Data in Apache commons collections,4.1,https://nvd.nist.gov/vuln/detail/CVE-2015-7501
-2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N1,CVE-2019-10086,HIGH,deserialization,Insecure Deserialization in Apache Commons Beanutils,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2019-10086
-2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N1,CVE-2014-0114,HIGH,rce,Arbitrary code execution in Apache Commons BeanUtils,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2014-0114
-2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N1,CVE-2025-48734,HIGH,input_validation,Apache Commons Improper Access Control vulnerability,2.0.0-M2,https://nvd.nist.gov/vuln/detail/CVE-2025-48734
 2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2019-17571,CRITICAL,"deserialization, log_injection",Deserialization of Untrusted Data in Log4j,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2019-17571
-2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2022-23305,CRITICAL,"injection, sql_injection",SQL Injection in Log4j 1.2.x,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2022-23305
-2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2022-23307,CRITICAL,"deserialization, log_injection",Deserialization of Untrusted Data in Apache Log4j,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2022-23307
+2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2022-23305,CRITICAL,"injection, sql_injection, log_injection",SQL Injection in Log4j 1.2.x,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2022-23305
+2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2022-23307,HIGH,"deserialization, log_injection",Deserialization of Untrusted Data in Apache Log4j,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2022-23307
 2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2021-4104,HIGH,"deserialization, log_injection",JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2021-4104
 2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2023-26464,HIGH,"dos, log_injection",Apache Log4j 1.x (EOL) allows Denial of Service (DoS),2.0,https://nvd.nist.gov/vuln/detail/CVE-2023-26464
 2026-04-03,04_transitive_only_n3,log4j,log4j,1.2.17,N1,CVE-2022-23302,HIGH,"deserialization, log_injection",Deserialization of Untrusted Data in Log4j 1.x,1.2.17,https://nvd.nist.gov/vuln/detail/CVE-2022-23302
+2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N2+,CVE-2019-10086,HIGH,,Insecure Deserialization in Apache Commons Beanutils,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2019-10086
+2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N2+,CVE-2014-0114,HIGH,,Arbitrary code execution in Apache Commons BeanUtils,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2014-0114
+2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N2+,CVE-2025-48734,HIGH,,Apache Commons Improper Access Control vulnerability,2.0.0-M2,https://nvd.nist.gov/vuln/detail/CVE-2025-48734

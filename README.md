@@ -33,17 +33,45 @@ app (pom.xml / build.gradle)
 - **N1**: Declared directly in the build file
 - **N2**: Immediate transitive dependency (dependency of a direct dependency)
 - **N3**: Two levels deep in the transitive tree
-- **N4**: Three or more levels deep — often beyond default SCA analysis depth
+- **N4**: Three levels deep -- often beyond default SCA analysis depth
+- **N5**: Four levels deep -- only Supply Chain Agentic reaches this depth
+
+## Latest Results (2026-04-03)
+
+| Project | Supply Chain Agentic | GitHub Copilot | Claude Opus 4 |
+|---|:---:|:---:|:---:|
+| 01_direct_vuln_n1 | **38** | 6 | 5 |
+| 02_vuln_n1_and_n2 | **61** | 32 | 28 |
+| 03_transitive_only_n2 | **100** | 42 | 30 |
+| 04_transitive_only_n3 | **11** | 5 | 4 |
+| 05_combined_n2_and_n3 | **99** | 61 | 57 |
+| 06_deep_transitive_n4 | **5** | 4 | 4 |
+| 07_unmaintained_repos | **1** | 0 | 0 |
+| **TOTAL** | **315** | **150** | **128** |
+
+Ground truth recall: **100%** across all 7 projects for Supply Chain Agentic.
+
+## Running the Benchmark
+
+```bash
+# Full benchmark (all 7 projects)
+python benchmark/run_benchmark.py
+
+# Single project
+python benchmark/run_benchmark.py --project 04_transitive_only_n3
+```
+
+Generates CSV + README per project in `benchmark-results/ai-analysis/supply_chain_agentic/`.
 
 ## Benchmark Results
 
-The `benchmark-results/` folder contains results from different SCA tool analyses performed on these projects. These results serve as a baseline for comparing tool effectiveness across scenarios.
+The `benchmark-results/` folder contains results from 3 AI-based analyses:
 
-Each result set includes:
-- The tool name and version used
-- Date of analysis
-- Detected vs. expected CVEs per project
-- Detection rate by dependency depth level (N1 through N4)
+- [`supply_chain_agentic/`](benchmark-results/ai-analysis/supply_chain_agentic/) -- Automated pipeline (315 CVEs, N0-N5 depth)
+- [`copilot/`](benchmark-results/ai-analysis/copilot/) -- GitHub Copilot + appmod-validate-cves-for-java (150 CVEs)
+- [`claude/`](benchmark-results/ai-analysis/claude/) -- Claude Opus 4 LLM analysis (128 CVEs)
+
+Each result set includes per-project CSV files and README with detection details.
 
 > Results should be interpreted considering the analysis date, as CVE databases are continuously updated.
 

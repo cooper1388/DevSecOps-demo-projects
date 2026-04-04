@@ -1,6 +1,6 @@
 scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
 2026-04-03,06_deep_transitive_n4,commons-collections,commons-collections,3.2.1,N1,CVE-2015-6420,HIGH,deserialization,Insecure Deserialization in Apache Commons Collection,3.2.2,https://nvd.nist.gov/vuln/detail/CVE-2015-6420
 2026-04-03,06_deep_transitive_n4,commons-collections,commons-collections,3.2.1,N1,CVE-2015-7501,CRITICAL,deserialization,Deserialization of Untrusted Data in Apache commons collections,4.1,https://nvd.nist.gov/vuln/detail/CVE-2015-7501
-2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N1,CVE-2024-47554,HIGH,dos,Apache Commons IO: Possible denial of service attack on untrusted input to XmlStreamReader,2.14.0,https://nvd.nist.gov/vuln/detail/CVE-2024-47554
-2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N1,CVE-2021-29425,HIGH,"path_traversal, input_validation",Path Traversal and Improper Input Validation in Apache Commons IO,2.7,https://nvd.nist.gov/vuln/detail/CVE-2021-29425
-2026-04-03,06_deep_transitive_n4,junit,junit,4.12,N1,CVE-2020-15250,MEDIUM,Transitive,TemporaryFolder on unix-like systems does not limit access to created files,4.13.1,https://nvd.nist.gov/vuln/detail/CVE-2020-15250
+2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N2+,CVE-2024-47554,HIGH,,Apache Commons IO: Possible denial of service attack on untrusted input to XmlStreamReader,2.14.0,https://nvd.nist.gov/vuln/detail/CVE-2024-47554
+2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N2+,CVE-2021-29425,HIGH,,Path Traversal and Improper Input Validation in Apache Commons IO,2.7,https://nvd.nist.gov/vuln/detail/CVE-2021-29425
+2026-04-03,06_deep_transitive_n4,junit,junit,4.12,N2+,CVE-2020-15250,MEDIUM,,TemporaryFolder on unix-like systems does not limit access to created files,4.13.1,https://nvd.nist.gov/vuln/detail/CVE-2020-15250
