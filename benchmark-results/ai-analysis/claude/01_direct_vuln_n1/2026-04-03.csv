@@ -1,0 +1,6 @@
+scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
+2026-04-03,01_direct_vuln_n1,org.apache.logging.log4j,log4j-core,2.14.1,N1,CVE-2021-44228,CRITICAL,RCE via JNDI,Log4Shell: JNDI features allow RCE via LDAP endpoint controlled by attacker. CVSS 10.0,2.17.1,https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+2026-04-03,01_direct_vuln_n1,org.apache.logging.log4j,log4j-core,2.14.1,N1,CVE-2021-45046,CRITICAL,RCE via JNDI,Incomplete fix of Log4Shell in 2.15.0; MDC pattern lookup exploitation,2.17.1,https://nvd.nist.gov/vuln/detail/CVE-2021-45046
+2026-04-03,01_direct_vuln_n1,org.apache.logging.log4j,log4j-core,2.14.1,N1,CVE-2021-45105,HIGH,DoS via recursion,Uncontrolled recursion from self-referential lookups causes DoS,2.17.1,https://nvd.nist.gov/vuln/detail/CVE-2021-45105
+2026-04-03,01_direct_vuln_n1,org.apache.logging.log4j,log4j-core,2.14.1,N1,CVE-2021-44832,MEDIUM,RCE via JDBC Appender,Attacker with log config access can use JDBC Appender with JNDI URI,2.17.1,https://nvd.nist.gov/vuln/detail/CVE-2021-44832
+2026-04-03,01_direct_vuln_n1,org.apache.commons,commons-text,1.9,N1,CVE-2022-42889,CRITICAL,RCE via interpolation,StringSubstitutor allows RCE through script/dns/url lookups,1.10.0,https://nvd.nist.gov/vuln/detail/CVE-2022-42889

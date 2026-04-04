@@ -1,0 +1,5 @@
+scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
+2026-04-03,04_transitive_only_n3,commons-collections,commons-collections,3.2.1,N3,CVE-2015-6420,HIGH,RCE via deserialization,InvokerTransformer enables arbitrary code execution via deserialization,3.2.2,https://nvd.nist.gov/vuln/detail/CVE-2015-6420
+2026-04-03,04_transitive_only_n3,commons-collections,commons-collections,3.2.1,N3,CVE-2015-7501,CRITICAL,RCE via deserialization,Gadget chain RCE via InvokerTransformer in deserialization,4.1,https://nvd.nist.gov/vuln/detail/CVE-2015-7501
+2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N3,CVE-2014-0114,HIGH,RCE via ClassLoader,Class property manipulation allows ClassLoader override,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2014-0114
+2026-04-03,04_transitive_only_n3,commons-beanutils,commons-beanutils,1.9.3,N3,CVE-2019-10086,HIGH,Property Access Bypass,PropertyUtilsBean suppresses class property access incorrectly,1.9.4,https://nvd.nist.gov/vuln/detail/CVE-2019-10086

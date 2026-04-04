@@ -1,0 +1,2 @@
+scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
+2026-04-03,07_unmaintained_repos,junit,junit,4.7,N1,CVE-2020-15250,MEDIUM,Transitive,TemporaryFolder on unix-like systems does not limit access to created files,4.13.1,https://nvd.nist.gov/vuln/detail/CVE-2020-15250

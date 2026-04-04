@@ -1,0 +1,5 @@
+scan_date,project,group_id,artifact_id,version,dependency_level,cve_id,severity,cve_type,short_description,fix_version,advisory_url
+2026-04-03,06_deep_transitive_n4,commons-collections,commons-collections,3.2.1,N4,CVE-2015-6420,HIGH,RCE via deserialization,InvokerTransformer enables arbitrary code execution,3.2.2,https://nvd.nist.gov/vuln/detail/CVE-2015-6420
+2026-04-03,06_deep_transitive_n4,commons-collections,commons-collections,3.2.1,N4,CVE-2015-7501,CRITICAL,RCE via deserialization,Gadget chain RCE via InvokerTransformer,4.1,https://nvd.nist.gov/vuln/detail/CVE-2015-7501
+2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N4,CVE-2021-29425,MEDIUM,Path Traversal,FileNameUtils.normalize path traversal,2.7,https://nvd.nist.gov/vuln/detail/CVE-2021-29425
+2026-04-03,06_deep_transitive_n4,commons-io,commons-io,2.6,N4,CVE-2024-47554,HIGH,DoS,XmlStreamReader CPU exhaustion,2.14.0,https://nvd.nist.gov/vuln/detail/CVE-2024-47554
