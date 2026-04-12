@@ -321,10 +321,6 @@ Este benchmark es la base experimental del siguiente trabajo:
 
 ---
 
-## Licencia
-
-Apache-2.0 (ver archivo [`LICENSE`](LICENSE))
-
 ## Contacto
 
 - Joseph Cooper — kenny.cooper@uth.hn
