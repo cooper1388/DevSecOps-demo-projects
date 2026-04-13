@@ -1,0 +1,3987 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "GHSA-v8j6-6c2r-r27c",
+    "dataSource": "https://github.com/advisories/GHSA-v8j6-6c2r-r27c",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-v8j6-6c2r-r27c"
+    ],
+    "description": "Expression Language Injection in Apache Struts",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.30"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-31805",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-31805",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2022/04/12/6",
+      "https://cwiki.apache.org/confluence/display/WW/S2-062",
+      "https://security.netapp.com/advisory/ntap-20220420-0001/",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "http://www.openwall.com/lists/oss-security/2022/04/12/6",
+      "https://cwiki.apache.org/confluence/display/WW/S2-062",
+      "https://security.netapp.com/advisory/ntap-20220420-0001/",
+      "https://www.oracle.com/security-alerts/cpujul2022.html"
+     ],
+     "description": "The fix issued for CVE-2020-17530 was incomplete. So from Apache Struts 2.0.0 to 2.5.29, still some of the tag’s attributes could perform a double evaluation if a developer applied forced OGNL evaluation by using the %{...} syntax. Using forced OGNL evaluation on untrusted user input can lead to a Remote Code Execution and security degradation.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.0.0,<2.5.30 (unknown)",
+      "vulnerabilityID": "GHSA-v8j6-6c2r-r27c"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-jc35-q369-45pv",
+    "dataSource": "https://github.com/advisories/GHSA-jc35-q369-45pv",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-jc35-q369-45pv"
+    ],
+    "description": "Remote code execution in Apache Struts",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.26"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2020-17530",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2020-17530",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://jvn.jp/en/jp/JVN43969166/index.html",
+      "http://packetstormsecurity.com/files/160721/Apache-Struts-2-Forced-Multi-OGNL-Evaluation.html",
+      "http://www.openwall.com/lists/oss-security/2022/04/12/6",
+      "https://cwiki.apache.org/confluence/display/WW/S2-061",
+      "https://security.netapp.com/advisory/ntap-20210115-0005/",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "http://jvn.jp/en/jp/JVN43969166/index.html",
+      "http://packetstormsecurity.com/files/160721/Apache-Struts-2-Forced-Multi-OGNL-Evaluation.html",
+      "http://www.openwall.com/lists/oss-security/2022/04/12/6",
+      "https://cwiki.apache.org/confluence/display/WW/S2-061",
+      "https://security.netapp.com/advisory/ntap-20210115-0005/",
+      "https://www.oracle.com//security-alerts/cpujul2021.html",
+      "https://www.oracle.com/security-alerts/cpuApr2021.html",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2021.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpuoct2021.html",
+      "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2020-17530"
+     ],
+     "description": "Forced OGNL evaluation, when evaluated on raw user input in tag attributes, may lead to remote code execution. Affected software : Apache Struts 2.0.0 - Struts 2.5.25.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 10,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.0.0,<2.5.26 (unknown)",
+      "vulnerabilityID": "GHSA-jc35-q369-45pv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-43mq-6xmg-29vm",
+    "dataSource": "https://github.com/advisories/GHSA-43mq-6xmg-29vm",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-43mq-6xmg-29vm"
+    ],
+    "description": "Apache Struts file upload logic is flawed",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.4.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-53677",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-53677",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "https://cwiki.apache.org/confluence/display/WW/S2-067",
+      "https://security.netapp.com/advisory/ntap-20250103-0005/"
+     ],
+     "description": "File upload logic in Apache Struts is flawed. An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.\n\nThis issue affects Apache Struts: from 2.0.0 before 6.4.0.\n\nUsers are recommended to upgrade to version 6.4.0 at least and migrate to the new  file upload mechanism https://struts.apache.org/core-developers/file-upload . If you are not using an old file upload logic based on FileuploadInterceptor your application is safe.\n\nYou can find more details in  https://cwiki.apache.org/confluence/display/WW/S2-067",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security@apache.org",
+       "type": "Secondary",
+       "version": "4.0",
+       "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:Y/R:A/V:C/RE:L/U:Red",
+       "metrics": {
+        "baseScore": 9.5
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": "<6.4.0 (unknown)",
+      "vulnerabilityID": "GHSA-43mq-6xmg-29vm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2j39-qcjm-428w",
+    "dataSource": "https://github.com/advisories/GHSA-2j39-qcjm-428w",
+    "namespace": "github:language:java",
+    "severity": "Critical",
+    "urls": [
+     "https://github.com/advisories/GHSA-2j39-qcjm-428w"
+    ],
+    "description": "Apache Struts vulnerable to path traversal",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 9.8,
+       "exploitabilityScore": 3.9,
+       "impactScore": 5.9
+      },
+      "vendorMetadata": {
+       "base_severity": "Critical",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.33"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-50164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50164",
+     "namespace": "nvd:cpe",
+     "severity": "Critical",
+     "urls": [
+      "http://packetstormsecurity.com/files/176157/Struts-S2-066-File-Upload-Remote-Code-Execution.html",
+      "https://lists.apache.org/thread/yh09b3fkf6vz5d6jdgrlvmg60lfwtqhj",
+      "https://security.netapp.com/advisory/ntap-20231214-0010/",
+      "https://www.openwall.com/lists/oss-security/2023/12/07/1",
+      "http://packetstormsecurity.com/files/176157/Struts-S2-066-File-Upload-Remote-Code-Execution.html",
+      "https://lists.apache.org/thread/yh09b3fkf6vz5d6jdgrlvmg60lfwtqhj",
+      "https://security.netapp.com/advisory/ntap-20231214-0010/",
+      "https://www.openwall.com/lists/oss-security/2023/12/07/1"
+     ],
+     "description": "An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.\nUsers are recommended to upgrade to versions Struts 2.5.33 or Struts 6.3.0.2 or greater to fix this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 9.8,
+        "exploitabilityScore": 3.9,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.0.0,<2.5.33 (unknown)",
+      "vulnerabilityID": "GHSA-2j39-qcjm-428w"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-xx7v-hqxh-cjr9",
+    "dataSource": "https://github.com/advisories/GHSA-xx7v-hqxh-cjr9",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xx7v-hqxh-cjr9"
+    ],
+    "description": "Apache Struts is Vulnerable to DoS via File Leak",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2025-64775",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-64775",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://cwiki.apache.org/confluence/display/WW/S2-068",
+      "http://www.openwall.com/lists/oss-security/2025/12/01/2"
+     ],
+     "description": "Denial of Service vulnerability in Apache Struts, file leak in multipart request processing causes disk exhaustion.\n\nThis issue affects Apache Struts: from 2.0.0 through 6.7.0, from 7.0.0 through 7.0.3.\n\nUsers are recommended to upgrade to version 6.8.0 or 7.1.1, which fixes the issue.",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.5.0,<=2.5.33 (unknown)",
+      "vulnerabilityID": "GHSA-xx7v-hqxh-cjr9"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rg58-xhh7-mqjw",
+    "dataSource": "https://github.com/advisories/GHSA-rg58-xhh7-mqjw",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rg58-xhh7-mqjw"
+    ],
+    "description": "Apache Struts has a Denial of Service vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "metrics": {
+       "baseScore": 8.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "6.8.0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2025-66675",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-66675",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://cve.org/CVERecord?id=CVE-2025-64775",
+      "https://cwiki.apache.org/confluence/display/WW/S2-068"
+     ],
+     "description": "Denial of Service vulnerability in Apache Struts, file leak in multipart request processing causes disk exhaustion.\n\nThis issue affects Apache Struts: from 2.0.0 through 6.7.4, from 7.0.0 through 7.0.3.\n\nUsers are recommended to upgrade to version 6.8.0 or 7.1.1, which fixes the issue.\n\nIt's related to  https://cve.org/CVERecord?id=CVE-2025-64775  - this CVE addresses missing affected version 6.7.4",
+     "cvss": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.2,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.0.0,<6.8.0 (unknown)",
+      "vulnerabilityID": "GHSA-rg58-xhh7-mqjw"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qcfc-hmrc-59x7",
+    "dataSource": "https://github.com/advisories/GHSA-qcfc-hmrc-59x7",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-qcfc-hmrc-59x7"
+    ],
+    "description": "Apache Struts 2 is Missing XML Validation",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+      "metrics": {
+       "baseScore": 8.1,
+       "exploitabilityScore": 2.8,
+       "impactScore": 5.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2025-68493",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-68493",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://cwiki.apache.org/confluence/display/WW/S2-069",
+      "http://www.openwall.com/lists/oss-security/2026/01/11/2"
+     ],
+     "description": "Missing XML Validation vulnerability in Apache Struts, Apache Struts.\n\nThis issue affects Apache Struts: from 2.0.0 before 2.2.1; Apache Struts: from 2.2.1 through 6.1.0.\n\nUsers are recommended to upgrade to version 6.1.1, which fixes the issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+       "metrics": {
+        "baseScore": 8.1,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.2
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": ">=2.5.0,<=2.5.33 (unknown)",
+      "vulnerabilityID": "GHSA-qcfc-hmrc-59x7"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-729q-fcgp-r5xh",
+    "dataSource": "https://github.com/advisories/GHSA-729q-fcgp-r5xh",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-729q-fcgp-r5xh"
+    ],
+    "description": "Apache Struts Improper Control of Dynamically-Managed Code Resources vulnerability",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.32"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-41835",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-41835",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://lists.apache.org/thread/6wj530kh3ono8phr642y9sqkl67ys2ft",
+      "https://www.openwall.com/lists/oss-security/2023/12/09/1",
+      "https://lists.apache.org/thread/6wj530kh3ono8phr642y9sqkl67ys2ft",
+      "https://security.netapp.com/advisory/ntap-20231013-0001/",
+      "https://www.openwall.com/lists/oss-security/2023/12/09/1"
+     ],
+     "description": "When a Multipart request is performed but some of the fields exceed the maxStringLength  limit, the upload files will remain in struts.multipart.saveDir  even if the request has been denied.\nUsers are recommended to upgrade to versions Struts 2.5.32 or 6.1.2.2 or Struts 6.3.0.1 or greater, which fixe this issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.5.32 (unknown)",
+      "vulnerabilityID": "GHSA-729q-fcgp-r5xh"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-4g42-gqrg-4633",
+    "dataSource": "https://github.com/advisories/GHSA-4g42-gqrg-4633",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-4g42-gqrg-4633"
+    ],
+    "description": "Apache Struts vulnerable to memory exhaustion",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34396",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34396",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/06/14/3",
+      "https://cwiki.apache.org/confluence/display/WW/S2-064",
+      "https://security.netapp.com/advisory/ntap-20230706-0005/",
+      "http://www.openwall.com/lists/oss-security/2023/06/14/3",
+      "https://cwiki.apache.org/confluence/display/WW/S2-064",
+      "https://security.netapp.com/advisory/ntap-20230706-0005/"
+     ],
+     "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Software Foundation Apache Struts.This issue affects Apache Struts: through 2.5.30, through 6.1.2.\n\nUpgrade to Struts 2.5.31 or 6.1.2.1 or greater",
+     "cvss": [
+      {
+       "source": "security@apache.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.5.31 (unknown)",
+      "vulnerabilityID": "GHSA-4g42-gqrg-4633"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8f6x-v685-g2xc",
+    "dataSource": "https://github.com/advisories/GHSA-8f6x-v685-g2xc",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-8f6x-v685-g2xc"
+    ],
+    "description": "Apache Struts vulnerable to memory exhaustion",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "2.5.31"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-34149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-34149",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/06/14/2",
+      "https://cwiki.apache.org/confluence/display/WW/S2-063",
+      "https://security.netapp.com/advisory/ntap-20230706-0005/",
+      "http://www.openwall.com/lists/oss-security/2023/06/14/2",
+      "https://cwiki.apache.org/confluence/display/WW/S2-063",
+      "https://security.netapp.com/advisory/ntap-20230706-0005/"
+     ],
+     "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Software Foundation Apache Struts.This issue affects Apache Struts: through 2.5.30, through 6.1.2.\n\nUpgrade to Struts 2.5.31 or 6.1.2.1 or greater.",
+     "cvss": [
+      {
+       "source": "security@apache.org",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 4.3,
+        "exploitabilityScore": 2.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "struts2-core",
+       "version": "2.5.25"
+      }
+     },
+     "found": {
+      "versionConstraint": "<2.5.31 (unknown)",
+      "vulnerabilityID": "GHSA-8f6x-v685-g2xc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d5d9b23757b28393",
+    "name": "struts2-core",
+    "version": "2.5.25",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:apache:struts2-core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts2_core:2.5.25:*:*:*:*:*:*:*",
+     "cpe:2.3:a:apache:struts:2.5.25:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.25",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "struts2-core",
+     "pomGroupID": "org.apache.struts",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-xw4p-crpj-vjx2",
+    "dataSource": "https://github.com/advisories/GHSA-xw4p-crpj-vjx2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-xw4p-crpj-vjx2"
+    ],
+    "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39152",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39152",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-xw4p-crpj-vjx2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39152.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-xw4p-crpj-vjx2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39152.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-xw4p-crpj-vjx2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-rmr5-cpv2-vgjf",
+    "dataSource": "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf"
+    ],
+    "description": "Denial of Service by injecting highly recursive collections or maps in XStream",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.19"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-43859",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-43859",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2022/02/09/1",
+      "https://github.com/x-stream/xstream/commit/e8e88621ba1c85ac3b8620337dd672e0c0c3a846",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-rmr5-cpv2-vgjf",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00018.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VACQYG356OHUTD5WQGAQ4L2TTFTAV3SJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XODFRE2ZL64FICBJDOPWOLPTSSAI4U7X/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-43859.html",
+      "http://www.openwall.com/lists/oss-security/2022/02/09/1",
+      "https://github.com/x-stream/xstream/commit/e8e88621ba1c85ac3b8620337dd672e0c0c3a846",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-rmr5-cpv2-vgjf",
+      "https://lists.debian.org/debian-lts-announce/2022/02/msg00018.html",
+      "https://lists.debian.org/debian-lts-announce/2024/12/msg00023.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VACQYG356OHUTD5WQGAQ4L2TTFTAV3SJ/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XODFRE2ZL64FICBJDOPWOLPTSSAI4U7X/",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-43859.html"
+     ],
+     "description": "XStream is an open source java library to serialize objects to XML and back again. Versions prior to 1.4.19 may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. XStream 1.4.19 monitors and accumulates the time it takes to add elements to collections and throws an exception if a set threshold is exceeded. Users are advised to upgrade as soon as possible. Users unable to upgrade may set the NO_REFERENCE mode to prevent recursion. See GHSA-rmr5-cpv2-vgjf for further details on a workaround if an upgrade is not possible.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.19 (unknown)",
+      "vulnerabilityID": "GHSA-rmr5-cpv2-vgjf"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-qrx8-8545-4wg2",
+    "dataSource": "https://github.com/advisories/GHSA-qrx8-8545-4wg2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-qrx8-8545-4wg2"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39148",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39148",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-qrx8-8545-4wg2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39148.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-qrx8-8545-4wg2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39148.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-qrx8-8545-4wg2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-p8pq-r894-fm8f",
+    "dataSource": "https://github.com/advisories/GHSA-p8pq-r894-fm8f",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-p8pq-r894-fm8f"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39146",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39146",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-p8pq-r894-fm8f",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39146.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-p8pq-r894-fm8f",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39146.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-p8pq-r894-fm8f"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j9h8-phrw-h4fh",
+    "dataSource": "https://github.com/advisories/GHSA-j9h8-phrw-h4fh",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-j9h8-phrw-h4fh"
+    ],
+    "description": "XStream is vulnerable to a Remote Command Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H/E:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39144",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39144",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://packetstormsecurity.com/files/169859/VMware-NSX-Manager-XStream-Unauthenticated-Remote-Code-Execution.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-j9h8-phrw-h4fh",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39144.html",
+      "http://packetstormsecurity.com/files/169859/VMware-NSX-Manager-XStream-Unauthenticated-Remote-Code-Execution.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-j9h8-phrw-h4fh",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39144.html",
+      "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-39144"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-j9h8-phrw-h4fh"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-j563-grx4-pjpv",
+    "dataSource": "https://github.com/advisories/GHSA-j563-grx4-pjpv",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-j563-grx4-pjpv"
+    ],
+    "description": "XStream can cause Denial of Service via stack overflow",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "metrics": {
+       "baseScore": 8.2,
+       "exploitabilityScore": 3.9,
+       "impactScore": 4.2
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.20"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-41966",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-41966",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv",
+      "https://x-stream.github.io/CVE-2022-41966.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-j563-grx4-pjpv",
+      "https://security.netapp.com/advisory/ntap-20230216-0005/",
+      "https://x-stream.github.io/CVE-2022-41966.html"
+     ],
+     "description": "XStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+       "metrics": {
+        "baseScore": 8.2,
+        "exploitabilityScore": 3.9,
+        "impactScore": 4.2
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.20 (unknown)",
+      "vulnerabilityID": "GHSA-j563-grx4-pjpv"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hph2-m3g5-xxv4",
+    "dataSource": "https://github.com/advisories/GHSA-hph2-m3g5-xxv4",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hph2-m3g5-xxv4"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39151",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39151",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-hph2-m3g5-xxv4",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39151.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-hph2-m3g5-xxv4",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39151.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-hph2-m3g5-xxv4"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-hfq9-hggm-c56q",
+    "dataSource": "https://github.com/advisories/GHSA-hfq9-hggm-c56q",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-hfq9-hggm-c56q"
+    ],
+    "description": "XStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.21"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2024-47072",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-47072",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/commit/bb838ce2269cac47433e31c77b2b236466e9f266",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-hfq9-hggm-c56q",
+      "https://x-stream.github.io/CVE-2024-47072.html",
+      "https://lists.debian.org/debian-lts-announce/2024/12/msg00023.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. This vulnerability may allow a remote attacker to terminate the application with a stack overflow error resulting in a denial of service only by manipulating the processed input stream when XStream is configured to use the BinaryStreamDriver. XStream 1.4.21 has been patched to detect the manipulation in the binary input stream causing the the stack overflow and raises an InputManipulationException instead. Users are advised to upgrade. Users unable to upgrade may catch the StackOverflowError in the client code calling XStream if XStream is configured to use the BinaryStreamDriver.",
+     "cvss": [
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.21 (unknown)",
+      "vulnerabilityID": "GHSA-hfq9-hggm-c56q"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-h7v4-7xg3-hxcc",
+    "dataSource": "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39147",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39147",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-h7v4-7xg3-hxcc",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39147.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-h7v4-7xg3-hxcc",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39147.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-h7v4-7xg3-hxcc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-g5w6-mrj7-75h2",
+    "dataSource": "https://github.com/advisories/GHSA-g5w6-mrj7-75h2",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-g5w6-mrj7-75h2"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39141",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39141",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-g5w6-mrj7-75h2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39141.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-g5w6-mrj7-75h2",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39141.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-g5w6-mrj7-75h2"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-f8cc-g7j8-xxpm",
+    "dataSource": "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm"
+    ],
+    "description": "XStream can cause a Denial of Service by injecting deeply nested objects raising a stack overflow",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 7.5,
+       "exploitabilityScore": 3.9,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.20"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-40151",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-40151",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47367",
+      "https://github.com/x-stream/xstream/issues/304",
+      "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47367",
+      "https://github.com/x-stream/xstream/issues/304"
+     ],
+     "description": "Those using Xstream to seralize XML data may be vulnerable to Denial of Service attacks (DOS). If the parser is running on user supplied input, an attacker may supply content that causes the parser to crash by stackoverflow. This effect may support a denial of service attack.",
+     "cvss": [
+      {
+       "source": "cve-coordination@google.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.20 (unknown)",
+      "vulnerabilityID": "GHSA-f8cc-g7j8-xxpm"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-cxfm-5m4g-x7xp",
+    "dataSource": "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp"
+    ],
+    "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39150",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39150",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-cxfm-5m4g-x7xp",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39150.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-cxfm-5m4g-x7xp",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39150.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-cxfm-5m4g-x7xp"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-8jrj-525p-826v",
+    "dataSource": "https://github.com/advisories/GHSA-8jrj-525p-826v",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-8jrj-525p-826v"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39145",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39145",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-8jrj-525p-826v",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39145.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-8jrj-525p-826v",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39145.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-8jrj-525p-826v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6w62-hx7r-mw68",
+    "dataSource": "https://github.com/advisories/GHSA-6w62-hx7r-mw68",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-6w62-hx7r-mw68"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39154",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39154",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-6w62-hx7r-mw68",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39154.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-6w62-hx7r-mw68",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39154.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-6w62-hx7r-mw68"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-64xx-cq4q-mf44",
+    "dataSource": "https://github.com/advisories/GHSA-64xx-cq4q-mf44",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-64xx-cq4q-mf44"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39139",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39139",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-64xx-cq4q-mf44",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39139.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-64xx-cq4q-mf44",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39139.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. A user is only affected if using the version out of the box with JDK 1.7u21 or below. However, this scenario can be adjusted easily to an external Xalan that works regardless of the version of the Java runtime. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.8,
+        "exploitabilityScore": 2.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-64xx-cq4q-mf44"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-3ccq-5vw3-2p6x",
+    "dataSource": "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39149",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39149",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-3ccq-5vw3-2p6x",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39149.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-3ccq-5vw3-2p6x",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39149.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-3ccq-5vw3-2p6x"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-2q8x-2p7f-574v",
+    "dataSource": "https://github.com/advisories/GHSA-2q8x-2p7f-574v",
+    "namespace": "github:language:java",
+    "severity": "High",
+    "urls": [
+     "https://github.com/advisories/GHSA-2q8x-2p7f-574v"
+    ],
+    "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "metrics": {
+       "baseScore": 8.5,
+       "exploitabilityScore": 1.8,
+       "impactScore": 6
+      },
+      "vendorMetadata": {
+       "base_severity": "High",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39153",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39153",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-2q8x-2p7f-574v",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39153.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-2q8x-2p7f-574v",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39153.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream, if using the version out of the box with Java runtime version 14 to 8 or with JavaFX installed. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+       "metrics": {
+        "baseScore": 6,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.4
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 8.5,
+        "exploitabilityScore": 1.8,
+        "impactScore": 6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-2q8x-2p7f-574v"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  },
+  {
+   "vulnerability": {
+    "id": "GHSA-6wf9-jmg9-vxcc",
+    "dataSource": "https://github.com/advisories/GHSA-6wf9-jmg9-vxcc",
+    "namespace": "github:language:java",
+    "severity": "Medium",
+    "urls": [
+     "https://github.com/advisories/GHSA-6wf9-jmg9-vxcc"
+    ],
+    "description": "XStream can cause a Denial of Service",
+    "cvss": [
+     {
+      "version": "3.1",
+      "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "metrics": {
+       "baseScore": 6.5,
+       "exploitabilityScore": 2.8,
+       "impactScore": 3.6
+      },
+      "vendorMetadata": {
+       "base_severity": "Medium",
+       "status": "N/A"
+      }
+     }
+    ],
+    "fix": {
+     "versions": [
+      "1.4.18"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2021-39140",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-39140",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-6wf9-jmg9-vxcc",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39140.html",
+      "https://github.com/x-stream/xstream/security/advisories/GHSA-6wf9-jmg9-vxcc",
+      "https://lists.debian.org/debian-lts-announce/2021/09/msg00017.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/22KVR6B5IZP3BGQ3HPWIO2FWWCKT3DHP/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PVPHZA7VW2RRSDCOIPP2W6O5ND254TU7/",
+      "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QGXIU3YDPG6OGTDHMBLAFN7BPBERXREB/",
+      "https://security.netapp.com/advisory/ntap-20210923-0003/",
+      "https://www.debian.org/security/2021/dsa-5004",
+      "https://www.oracle.com/security-alerts/cpuapr2022.html",
+      "https://www.oracle.com/security-alerts/cpujan2022.html",
+      "https://www.oracle.com/security-alerts/cpujul2022.html",
+      "https://x-stream.github.io/CVE-2021-39140.html"
+     ],
+     "description": "XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:M/Au:S/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 6.3,
+        "exploitabilityScore": 6.8,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "security-advisories@github.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2.8,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 6.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "java-matcher",
+     "searchedBy": {
+      "language": "java",
+      "namespace": "github:language:java",
+      "package": {
+       "name": "xstream",
+       "version": "1.4.17"
+      }
+     },
+     "found": {
+      "versionConstraint": "<1.4.18 (unknown)",
+      "vulnerabilityID": "GHSA-6wf9-jmg9-vxcc"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "111fd872669f10e0",
+    "name": "xstream",
+    "version": "1.4.17",
+    "type": "java-archive",
+    "locations": [
+     {
+      "path": "\\pom.xml"
+     }
+    ],
+    "language": "java",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:com.thoughtworks.xstream:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:thoughtworks:xstream:1.4.17:*:*:*:*:*:*:*",
+     "cpe:2.3:a:xstream:xstream:1.4.17:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.17",
+    "upstreams": [],
+    "metadataType": "JavaMetadata",
+    "metadata": {
+     "virtualPath": "",
+     "pomArtifactID": "xstream",
+     "pomGroupID": "com.thoughtworks.xstream",
+     "manifestName": "",
+     "archiveDigests": null
+    }
+   }
+  }
+ ],
+ "source": {
+  "type": "directory",
+  "target": "c:/DevOpsAI/supply_chain_agentic_v2/supply_chain_agentic_v2/proyecto_agentico/benchmark/benchmark-projects/02_vuln_n1_and_n2"
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.87.0",
+  "configuration": {
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "ignore-wontfix": "",
+   "platform": "",
+   "search": {
+    "scope": "squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "kernel-headers",
+      "version": "",
+      "language": "",
+      "type": "rpm",
+      "location": "",
+      "upstream-name": "kernel"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux(-.*)?-headers-.*",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux.*"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    },
+    {
+     "vulnerability": "",
+     "reason": "",
+     "namespace": "",
+     "fix-state": "",
+     "package": {
+      "name": "linux-libc-dev",
+      "version": "",
+      "language": "",
+      "type": "deb",
+      "location": "",
+      "upstream-name": "linux"
+     },
+     "vex-status": "",
+     "vex-justification": "",
+     "match-type": "exact-indirect-match"
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "C:\\Users\\Selvin Maldonado\\AppData\\Local\\cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000,
+    "require-update-check": false,
+    "update-available-timeout": 30000000000,
+    "update-download-timeout": 300000000000,
+    "max-update-check-frequency": 7200000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": false
+    },
+    "jvm": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": false
+    },
+    "golang": {
+     "using-cpes": false,
+     "always-use-cpe-for-stdlib": true,
+     "allow-main-module-pseudo-version-comparison": false
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": false
+    },
+    "ruby": {
+     "using-cpes": false
+    },
+    "rust": {
+     "using-cpes": false
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": null,
+    "ca-cert": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": "",
+   "vex-documents": [],
+   "vex-add": [],
+   "match-upstream-kernel-headers": false,
+   "exp": {
+    "dbv6": false
+   }
+  },
+  "db": {
+   "built": "2026-03-09T00:31:20Z",
+   "schemaVersion": 5,
+   "location": "C:\\Users\\Selvin Maldonado\\AppData\\Local\\cache/grype/db/5",
+   "checksum": "sha256:a65e27aecbbb2cd6671f5da84c16db7e9c60f0114075e6ae9bcc71f466460a0c",
+   "error": null
+  },
+  "timestamp": "2026-04-09T15:14:21.8879245-06:00"
+ }
+}

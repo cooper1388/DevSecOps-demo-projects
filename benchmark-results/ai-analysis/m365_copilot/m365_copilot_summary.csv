@@ -1,0 +1,8 @@
+scan_date,project,tool,model,total_cves,critical,high,medium,low
+2026-04-10,01_direct_vuln_n1,M365 Copilot,GPT-5.4 Think Deeper,8,3,2,3,0
+2026-04-10,02_vuln_n1_and_n2,M365 Copilot,GPT-5.4 Think Deeper,51,4,35,12,0
+2026-04-10,03_transitive_only_n2,M365 Copilot,GPT-5.4 Think Deeper,63,1,24,34,4
+2026-04-10,04_transitive_only_n3,M365 Copilot,GPT-5.4 Think Deeper,5,2,3,0,0
+2026-04-10,05_combined_n2_and_n3,M365 Copilot,GPT-5.4 Think Deeper,63,7,50,6,0
+2026-04-10,06_deep_transitive_n4,M365 Copilot,GPT-5.4 Think Deeper,4,2,0,2,0
+2026-04-10,07_unmaintained_repos,M365 Copilot,GPT-5.4 Think Deeper,0,0,0,0,0

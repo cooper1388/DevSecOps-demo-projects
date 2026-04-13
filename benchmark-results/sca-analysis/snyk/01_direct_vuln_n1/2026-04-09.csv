@@ -1,0 +1,8 @@
+scan_date,project,package,version,cve_id,severity,title,fix_version,url
+2026-04-09,01_direct_vuln_n1,org.apache.commons:commons-lang3,3.11,CVE-2025-48924,HIGH,Uncontrolled Recursion,,
+2026-04-09,01_direct_vuln_n1,org.apache.commons:commons-text,1.9,CVE-2022-42889,HIGH,Arbitrary Code Execution,,
+2026-04-09,01_direct_vuln_n1,org.apache.logging.log4j:log4j-core,2.14.1,CVE-2025-68161,MEDIUM,Improper Validation of Certificate with Host Mismatch,,
+2026-04-09,01_direct_vuln_n1,org.apache.logging.log4j:log4j-core,2.14.1,CVE-2021-44228,CRITICAL,Remote Code Execution (RCE),,
+2026-04-09,01_direct_vuln_n1,org.apache.logging.log4j:log4j-core,2.14.1,CVE-2021-45046,CRITICAL,Remote Code Execution (RCE),,
+2026-04-09,01_direct_vuln_n1,org.apache.logging.log4j:log4j-core,2.14.1,CVE-2021-45105,HIGH,Denial of Service (DoS),,
+2026-04-09,01_direct_vuln_n1,org.apache.logging.log4j:log4j-core,2.14.1,CVE-2021-44832,MEDIUM,Arbitrary Code Execution,,

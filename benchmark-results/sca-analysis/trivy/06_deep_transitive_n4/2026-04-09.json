@@ -1,0 +1,526 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d7418-7a20-7bf4-bfe1-2f2ac5b5218d",
+  "CreatedAt": "2026-04-09T15:14:14.4327834-06:00",
+  "ArtifactName": "c:/DevOpsAI/supply_chain_agentic_v2/supply_chain_agentic_v2/proyecto_agentico/benchmark/benchmark-projects/06_deep_transitive_n4/pom.xml",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.benchmark:vuln-solo-n4-parent:1.0.0::b93d5f87",
+          "Name": "com.benchmark:vuln-solo-n4-parent",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/vuln-solo-n4-parent@1.0.0",
+            "UID": "55fe19291ac47"
+          },
+          "Version": "1.0.0",
+          "Relationship": "root",
+          "DependsOn": [
+            "com.benchmark:app:1.0.0::eed7c054",
+            "com.benchmark:lib-deep:1.0.0::3686497f",
+            "com.benchmark:lib-middle:1.0.0::2c249c84",
+            "com.benchmark:lib-outer:1.0.0::4c6dba53"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:app:1.0.0::eed7c054",
+          "Name": "com.benchmark:app",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/app@1.0.0",
+            "UID": "4e0d0c8beefd8f10"
+          },
+          "Version": "1.0.0",
+          "Relationship": "workspace",
+          "DependsOn": [
+            "com.benchmark:lib-outer:1.0.0::80c11cbb"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-deep:1.0.0::3686497f",
+          "Name": "com.benchmark:lib-deep",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-deep@1.0.0",
+            "UID": "51f5ebb4e5771afd"
+          },
+          "Version": "1.0.0",
+          "Relationship": "workspace",
+          "DependsOn": [
+            "commons-collections:commons-collections:3.2.1::4da16d7d",
+            "commons-io:commons-io:2.6::8b6fb605"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-middle:1.0.0::2c249c84",
+          "Name": "com.benchmark:lib-middle",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-middle@1.0.0",
+            "UID": "9b8851ca19ed85c0"
+          },
+          "Version": "1.0.0",
+          "Relationship": "workspace",
+          "DependsOn": [
+            "com.benchmark:lib-deep:1.0.0::d1118741"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-outer:1.0.0::4c6dba53",
+          "Name": "com.benchmark:lib-outer",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-outer@1.0.0",
+            "UID": "cb021b749e6898bc"
+          },
+          "Version": "1.0.0",
+          "Relationship": "workspace",
+          "DependsOn": [
+            "com.benchmark:lib-middle:1.0.0::82301fb5"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-deep:1.0.0::d1118741",
+          "Name": "com.benchmark:lib-deep",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-deep@1.0.0",
+            "UID": "8104fa279e90b379"
+          },
+          "Version": "1.0.0",
+          "Relationship": "direct",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-middle:1.0.0::82301fb5",
+          "Name": "com.benchmark:lib-middle",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-middle@1.0.0",
+            "UID": "51e041f79834c2de"
+          },
+          "Version": "1.0.0",
+          "Relationship": "direct",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.benchmark:lib-outer:1.0.0::80c11cbb",
+          "Name": "com.benchmark:lib-outer",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/lib-outer@1.0.0",
+            "UID": "8f39ea765e9e099d"
+          },
+          "Version": "1.0.0",
+          "Relationship": "direct",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "commons-collections:commons-collections:3.2.1::4da16d7d",
+          "Name": "commons-collections:commons-collections",
+          "Identifier": {
+            "PURL": "pkg:maven/commons-collections/commons-collections@3.2.1",
+            "UID": "768070571140a2d1"
+          },
+          "Version": "3.2.1",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "commons-io:commons-io:2.6::8b6fb605",
+          "Name": "commons-io:commons-io",
+          "Identifier": {
+            "PURL": "pkg:maven/commons-io/commons-io@2.6",
+            "UID": "697fe96f7468a960"
+          },
+          "Version": "2.6",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "AnalyzedBy": "pom"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2015-7501",
+          "VendorIDs": [
+            "GHSA-fjq5-5j5f-mvxh"
+          ],
+          "PkgID": "commons-collections:commons-collections:3.2.1::4da16d7d",
+          "PkgName": "commons-collections:commons-collections",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/commons-collections/commons-collections@3.2.1",
+            "UID": "768070571140a2d1"
+          },
+          "InstalledVersion": "3.2.1",
+          "FixedVersion": "3.2.2",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2015-7501",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:6e6187752ac3e9c3005b6dbe4c710eb398ab4a54824ab919182b948a06557dff",
+          "Title": "apache-commons-collections: InvokerTransformer code execution during deserialisation",
+          "Description": "Red Hat JBoss A-MQ 6.x; BPM Suite (BPMS) 6.x; BRMS 6.x and 5.x; Data Grid (JDG) 6.x; Data Virtualization (JDV) 6.x and 5.x; Enterprise Application Platform 6.x, 5.x, and 4.3.x; Fuse 6.x; Fuse Service Works (FSW) 6.x; Operations Network (JBoss ON) 3.x; Portal 6.x; SOA Platform (SOA-P) 5.x; Web Server (JWS) 3.x; Red Hat OpenShift/xPAAS 3.x; and Red Hat Subscription Asset Manager 1.3 allow remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections (ACC) library.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 4,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 4
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 10,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V2Score": 7.5
+            }
+          },
+          "References": [
+            "http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/",
+            "http://rhn.redhat.com/errata/RHSA-2015-2500.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2501.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2502.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2514.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2516.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2517.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2521.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2522.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2524.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2670.html",
+            "http://rhn.redhat.com/errata/RHSA-2015-2671.html",
+            "http://rhn.redhat.com/errata/RHSA-2016-0040.html",
+            "http://rhn.redhat.com/errata/RHSA-2016-1773.html",
+            "http://www.oracle.com/technetwork/security-advisory/cpuapr2018-3678067.html",
+            "http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html",
+            "http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html",
+            "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html",
+            "http://www.securityfocus.com/bid/78215",
+            "http://www.securitytracker.com/id/1034097",
+            "http://www.securitytracker.com/id/1037052",
+            "http://www.securitytracker.com/id/1037053",
+            "http://www.securitytracker.com/id/1037640",
+            "https://access.redhat.com/security/cve/CVE-2015-7501",
+            "https://access.redhat.com/security/vulnerabilities/2059393",
+            "https://access.redhat.com/solutions/2045023",
+            "https://arxiv.org/pdf/2306.05534.pdf",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1279330",
+            "https://commons.apache.org/proper/commons-collections/release_4_1.html",
+            "https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability",
+            "https://github.com/apache/commons-collections",
+            "https://github.com/jensdietrich/xshady-release/tree/main/CVE-2015-7501",
+            "https://issues.apache.org/jira/browse/COLLECTIONS-580.",
+            "https://linux.oracle.com/cve/CVE-2015-7501.html",
+            "https://linux.oracle.com/errata/ELSA-2015-2671.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2015-7501",
+            "https://rhn.redhat.com/errata/RHSA-2015-2536.html",
+            "https://security.netapp.com/advisory/ntap-20240216-0010/",
+            "https://sourceforge.net/p/collections/code/HEAD/tree",
+            "https://www.cve.org/CVERecord?id=CVE-2015-7501",
+            "https://www.oracle.com/security-alerts/cpujul2020.html"
+          ],
+          "PublishedDate": "2017-11-09T17:29:00.203Z",
+          "LastModifiedDate": "2025-04-20T01:37:25.86Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2015-6420",
+          "VendorIDs": [
+            "GHSA-6hgm-866r-3cjv"
+          ],
+          "PkgID": "commons-collections:commons-collections:3.2.1::4da16d7d",
+          "PkgName": "commons-collections:commons-collections",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/commons-collections/commons-collections@3.2.1",
+            "UID": "768070571140a2d1"
+          },
+          "InstalledVersion": "3.2.1",
+          "FixedVersion": "3.2.2",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2015-6420",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:0058dd27e5d632aaf6108969ba7d69203c9f22dfdb1528d492a6b4e825b243d6",
+          "Title": "Insecure Deserialization in Apache Commons Collection",
+          "Description": "Serialized-object interfaces in certain Cisco Collaboration and Social Media; Endpoint Clients and Client Software; Network Application, Service, and Acceleration; Network and Content Security Devices; Network Management and Provisioning; Routing and Switching - Enterprise and Service Provider; Unified Computing; Voice and Unified Communications Devices; Video, Streaming, TelePresence, and Transcoding Devices; Wireless; and Cisco Hosted Services products allow remote attackers to execute arbitrary commands via a crafted serialized Java object, related to the Apache Commons Collections (ACC) library.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 4
+          },
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151209-java-deserialization",
+            "http://www.oracle.com/technetwork/security-advisory/cpujul2018-4258247.html",
+            "http://www.securityfocus.com/bid/78872",
+            "https://arxiv.org/pdf/2306.05534",
+            "https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/",
+            "https://github.com/apache/commons-collections",
+            "https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05376917",
+            "https://h20566.www2.hpe.com/portal/site/hpsc/public/kb/docDisplay?docId=emr_na-c05390722",
+            "https://lists.apache.org/thread.html/r352e40ca9874d1beb4ad95403792adca7eb295e6bc3bd7b65fabcc21%40%3Ccommits.samza.apache.org%3E",
+            "https://lists.apache.org/thread.html/r352e40ca9874d1beb4ad95403792adca7eb295e6bc3bd7b65fabcc21@%3Ccommits.samza.apache.org%3E",
+            "https://news.apache.org/foundation/entry/apache_commons_statement_to_widespread",
+            "https://nvd.nist.gov/vuln/detail/CVE-2015-6420",
+            "https://www.kb.cert.org/vuls/id/576313",
+            "https://www.kb.cert.org/vuls/id/581311",
+            "https://www.tenable.com/security/research/tra-2017-14",
+            "https://www.tenable.com/security/research/tra-2017-23"
+          ],
+          "PublishedDate": "2015-12-15T05:59:07.823Z",
+          "LastModifiedDate": "2026-02-24T19:36:10.86Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-47554",
+          "VendorIDs": [
+            "GHSA-78wr-2p64-hpwj"
+          ],
+          "PkgID": "commons-io:commons-io:2.6::8b6fb605",
+          "PkgName": "commons-io:commons-io",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/commons-io/commons-io@2.6",
+            "UID": "697fe96f7468a960"
+          },
+          "InstalledVersion": "2.6",
+          "FixedVersion": "2.14.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-47554",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:f106e4bd90ef0f9b2120be96abb1ba9e7b01154b81407b6a8dbeca28be2f4981",
+          "Title": "apache-commons-io: Possible denial of service attack on untrusted input to XmlStreamReader",
+          "Description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "ghsa": 3,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V3Score": 7.5,
+              "V40Score": 8.7
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 4.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2024/10/03/2",
+            "https://access.redhat.com/security/cve/CVE-2024-47554",
+            "https://github.com/apache/commons-io",
+            "https://lists.apache.org/thread/6ozr91rr9cj5lm0zyhv30bsp317hk5z1",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-47554",
+            "https://security.netapp.com/advisory/ntap-20250131-0010",
+            "https://security.netapp.com/advisory/ntap-20250131-0010/",
+            "https://www.cve.org/CVERecord?id=CVE-2024-47554"
+          ],
+          "PublishedDate": "2024-10-03T12:15:02.613Z",
+          "LastModifiedDate": "2025-07-10T21:10:32.113Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-29425",
+          "VendorIDs": [
+            "GHSA-gwrp-pvrq-jmwv"
+          ],
+          "PkgID": "commons-io:commons-io:2.6::8b6fb605",
+          "PkgName": "commons-io:commons-io",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/commons-io/commons-io@2.6",
+            "UID": "697fe96f7468a960"
+          },
+          "InstalledVersion": "2.6",
+          "FixedVersion": "2.7",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-29425",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a5e14b5187256cbf6c03a2cef4679336e64ec0a799259399fb242ef4495f4cb7",
+          "Title": "apache-commons-io: Limited path traversal in Apache Commons IO 2.2 to 2.6",
+          "Description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "ghsa": 2,
+            "nvd": 2,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V2Score": 5.8,
+              "V3Score": 4.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-29425",
+            "https://arxiv.org/pdf/2306.05534.pdf",
+            "https://github.com/jensdietrich/xshady-release/tree/main/CVE-2021-29425",
+            "https://issues.apache.org/jira/browse/IO-556",
+            "https://lists.apache.org/thread.html/r01b4a1fcdf3311c936ce33d75a9398b6c255f00c1a2f312ac21effe1%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r01b4a1fcdf3311c936ce33d75a9398b6c255f00c1a2f312ac21effe1@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r0bfa8f7921abdfae788b1f076a12f73a92c93cc0a6e1083bce0027c5%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r0bfa8f7921abdfae788b1f076a12f73a92c93cc0a6e1083bce0027c5@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r0d73e2071d1f1afe1a15da14c5b6feb2cf17e3871168d5a3c8451436%40%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r0d73e2071d1f1afe1a15da14c5b6feb2cf17e3871168d5a3c8451436@%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1c2f4683c35696cf6f863e3c107e37ec41305b1930dd40c17260de71%40%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r1c2f4683c35696cf6f863e3c107e37ec41305b1930dd40c17260de71@%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r20416f39ca7f7344e7d76fe4d7063bb1d91ad106926626e7e83fb346%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r20416f39ca7f7344e7d76fe4d7063bb1d91ad106926626e7e83fb346@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2345b49dbffa8a5c3c589c082fe39228a2c1d14f11b96c523da701db%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2345b49dbffa8a5c3c589c082fe39228a2c1d14f11b96c523da701db@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe@%3Cusers.kafka.apache.org%3E",
+            "https://lists.apache.org/thread.html/r27b1eedda37468256c4bb768fde1e8b79b37ec975cbbfd0d65a7ac34%40%3Cdev.myfaces.apache.org%3E",
+            "https://lists.apache.org/thread.html/r27b1eedda37468256c4bb768fde1e8b79b37ec975cbbfd0d65a7ac34@%3Cdev.myfaces.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2bc986a070457daca457a54fe71ee09d2584c24dc262336ca32b6a19%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2bc986a070457daca457a54fe71ee09d2584c24dc262336ca32b6a19@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2df50af2641d38f432ef025cd2ba5858215cc0cf3fc10396a674ad2e%40%3Cpluto-scm.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/r2df50af2641d38f432ef025cd2ba5858215cc0cf3fc10396a674ad2e@%3Cpluto-scm.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/r345330b7858304938b7b8029d02537a116d75265a598c98fa333504a%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r345330b7858304938b7b8029d02537a116d75265a598c98fa333504a@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r4050f9f6b42ebfa47a98cbdee4aabed4bb5fb8093db7dbb88faceba2%40%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r4050f9f6b42ebfa47a98cbdee4aabed4bb5fb8093db7dbb88faceba2@%3Ccommits.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r462db908acc1e37c455e11b1a25992b81efd18e641e7e0ceb1b6e046%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r462db908acc1e37c455e11b1a25992b81efd18e641e7e0ceb1b6e046@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r477c285126ada5c3b47946bb702cb222ac4e7fd3100c8549bdd6d3b2%40%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r477c285126ada5c3b47946bb702cb222ac4e7fd3100c8549bdd6d3b2@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r47ab6f68cbba8e730f42c4ea752f3a44eb95fb09064070f2476bb401%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r47ab6f68cbba8e730f42c4ea752f3a44eb95fb09064070f2476bb401@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5149f78be265be69d34eacb4e4b0fc7c9c697bcdfa91a1c1658d717b%40%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r5149f78be265be69d34eacb4e4b0fc7c9c697bcdfa91a1c1658d717b@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r523a6ffad58f71c4f3761e3cee72df878e48cdc89ebdce933be1475c%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r523a6ffad58f71c4f3761e3cee72df878e48cdc89ebdce933be1475c@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r808be7d93b17a7055c1981a8453ae5f0d0fce5855407793c5d0ffffa%40%3Cuser.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/r808be7d93b17a7055c1981a8453ae5f0d0fce5855407793c5d0ffffa@%3Cuser.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8569a41d565ca880a4dee0e645dad1cd17ab4a92e68055ad9ebb7375%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8569a41d565ca880a4dee0e645dad1cd17ab4a92e68055ad9ebb7375@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/r86528f4b7d222aed7891e7ac03d69a0db2a2dfa17b86ac3470d7f374%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r86528f4b7d222aed7891e7ac03d69a0db2a2dfa17b86ac3470d7f374@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r873d5ddafc0a68fd999725e559776dc4971d1ab39c0f5cc81bd9bc04%40%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r873d5ddafc0a68fd999725e559776dc4971d1ab39c0f5cc81bd9bc04@%3Ccommits.pulsar.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8bfc7235e6b39d90e6f446325a5a44c3e9e50da18860fdabcee23e29%40%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8bfc7235e6b39d90e6f446325a5a44c3e9e50da18860fdabcee23e29@%3Cissues.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8efcbabde973ea72f5e0933adc48ef1425db5cde850bf641b3993f31%40%3Cdev.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/r8efcbabde973ea72f5e0933adc48ef1425db5cde850bf641b3993f31@%3Cdev.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/r92ea904f4bae190b03bd42a4355ce3c2fbe8f36ab673e03f6ca3f9fa%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/r92ea904f4bae190b03bd42a4355ce3c2fbe8f36ab673e03f6ca3f9fa@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra8ef65aedc086d2d3d21492b4c08ae0eb8a3a42cc52e29ba1bc009d8%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/ra8ef65aedc086d2d3d21492b4c08ae0eb8a3a42cc52e29ba1bc009d8@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/raa053846cae9d497606027816ae87b4e002b2e0eb66cb0dee710e1f5%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/raa053846cae9d497606027816ae87b4e002b2e0eb66cb0dee710e1f5@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad4ae544747df32ccd58fff5a86cd556640396aeb161aa71dd3d192a%40%3Cuser.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/rad4ae544747df32ccd58fff5a86cd556640396aeb161aa71dd3d192a@%3Cuser.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbebd3e19651baa7a4a5503a9901c95989df9d40602c8e35cb05d3eb5%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/rbebd3e19651baa7a4a5503a9901c95989df9d40602c8e35cb05d3eb5@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc10fa20ef4d13cbf6ebe0b06b5edb95466a1424a9b7673074ed03260%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc10fa20ef4d13cbf6ebe0b06b5edb95466a1424a9b7673074ed03260@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc2dd3204260e9227a67253ef68b6f1599446005bfa0e1ddce4573a80%40%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc2dd3204260e9227a67253ef68b6f1599446005bfa0e1ddce4573a80@%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc359823b5500e9a9a2572678ddb8e01d3505a7ffcadfa8d13b8780ab%40%3Cuser.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc5f3df5316c5237b78a3dff5ab95b311ad08e61d418cd992ca7e34ae%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc5f3df5316c5237b78a3dff5ab95b311ad08e61d418cd992ca7e34ae@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc65f9bc679feffe4589ea0981ee98bc0af9139470f077a91580eeee0%40%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rc65f9bc679feffe4589ea0981ee98bc0af9139470f077a91580eeee0@%3Cpluto-dev.portals.apache.org%3E",
+            "https://lists.apache.org/thread.html/rca71a10ca533eb9bfac2d590533f02e6fb9064d3b6aa3ec90fdc4f51%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rca71a10ca533eb9bfac2d590533f02e6fb9064d3b6aa3ec90fdc4f51@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd09d4ab3e32e4b3a480e2ff6ff118712981ca82e817f28f2a85652a6%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rd09d4ab3e32e4b3a480e2ff6ff118712981ca82e817f28f2a85652a6@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/re41e9967bee064e7369411c28f0f5b2ad28b8334907c9c6208017279%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/re41e9967bee064e7369411c28f0f5b2ad28b8334907c9c6208017279@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/red3aea910403d8620c73e1c7b9c9b145798d0469eb3298a7be7891af%40%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/red3aea910403d8620c73e1c7b9c9b145798d0469eb3298a7be7891af@%3Cnotifications.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfa2f08b7c0caf80ca9f4a18bd875918fdd4e894e2ea47942a4589b9c%40%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfa2f08b7c0caf80ca9f4a18bd875918fdd4e894e2ea47942a4589b9c@%3Cdev.creadur.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfcd2c649c205f12b72dde044f905903460669a220a2eb7e12652d19d%40%3Cdev.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfcd2c649c205f12b72dde044f905903460669a220a2eb7e12652d19d@%3Cdev.zookeeper.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd01af05babc95b8949e6d8ea78d9834699e1b06981040dde419a330%40%3Cdev.commons.apache.org%3E",
+            "https://lists.apache.org/thread.html/rfd01af05babc95b8949e6d8ea78d9834699e1b06981040dde419a330@%3Cdev.commons.apache.org%3E",
+            "https://lists.debian.org/debian-lts-announce/2021/08/msg00016.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+            "https://security.netapp.com/advisory/ntap-20220210-0004",
+            "https://security.netapp.com/advisory/ntap-20220210-0004/",
+            "https://ubuntu.com/security/notices/USN-5095-1",
+            "https://www.cve.org/CVERecord?id=CVE-2021-29425",
+            "https://www.openwall.com/lists/oss-security/2021/04/12/1",
+            "https://www.oracle.com/security-alerts/cpuapr2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html"
+          ],
+          "PublishedDate": "2021-04-13T07:15:12.327Z",
+          "LastModifiedDate": "2024-11-21T06:01:04.113Z"
+        }
+      ]
+    }
+  ]
+}

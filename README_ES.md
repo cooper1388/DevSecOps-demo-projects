@@ -201,7 +201,7 @@ La carpeta `benchmark-results/` contiene resultados de múltiples herramientas:
 - [`sca-analysis/osv-scanner/`](benchmark-results/sca-analysis/osv-scanner/)
   — OSV-Scanner Google (104 CVEs)
 - [`sca-analysis/grype/`](benchmark-results/sca-analysis/grype/) — Grype (43 CVEs)
-- [`sca-analysis/sonarqube/`](benchmark-results/sca-analysis/sonarqube/)
+- [`sast-analysis/`](benchmark-results/sast-analysis/)
   — SonarQube 26.3 SAST (0 CVEs en dependencias, 20 code smells)
 
 Cada conjunto incluye archivos CSV y README por proyecto con detalle de detección.

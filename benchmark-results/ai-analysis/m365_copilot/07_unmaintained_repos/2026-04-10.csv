@@ -1,0 +1,2 @@
+scan_date,project,tool,model,total_cves,critical,high,medium,low
+2026-04-10,07_unmaintained_repos,M365 Copilot,GPT-5.4 Think Deeper,0,0,0,0,0

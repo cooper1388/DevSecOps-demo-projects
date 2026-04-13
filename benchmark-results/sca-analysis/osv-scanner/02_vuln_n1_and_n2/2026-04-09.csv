@@ -1,0 +1,34 @@
+scan_date,project,package,version,cve_id,severity,title,fix_version,url
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39153,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39153
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39149,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39149
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39139,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39139
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39154,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39154
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39140,LOW,XStream can cause a Denial of Service,,https://nvd.nist.gov/vuln/detail/CVE-2021-39140
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39145,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39145
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39150,LOW,A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host,,https://nvd.nist.gov/vuln/detail/CVE-2021-39150
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2022-40151,LOW,XStream can cause a Denial of Service by injecting deeply nested objects raising a stack overflow,,https://nvd.nist.gov/vuln/detail/CVE-2022-40151
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39141,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39141
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39147,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39147
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2024-47072,MEDIUM,XStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream,,https://nvd.nist.gov/vuln/detail/CVE-2024-47072
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39151,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39151
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2022-41966,LOW,XStream can cause Denial of Service via stack overflow,,https://nvd.nist.gov/vuln/detail/CVE-2022-41966
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39144,LOW,XStream is vulnerable to a Remote Command Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39144
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39146,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39146
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39148,LOW,XStream is vulnerable to an Arbitrary Code Execution attack,,https://nvd.nist.gov/vuln/detail/CVE-2021-39148
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-43859,LOW,Denial of Service by injecting highly recursive collections or maps in XStream,,https://nvd.nist.gov/vuln/detail/CVE-2021-43859
+2026-04-09,02_vuln_n1_and_n2,com.thoughtworks.xstream:xstream,1.4.17,CVE-2021-39152,LOW,A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host,,https://nvd.nist.gov/vuln/detail/CVE-2021-39152
+2026-04-09,02_vuln_n1_and_n2,commons-fileupload:commons-fileupload,1.4,CVE-2023-24998,LOW,Apache Commons FileUpload denial of service vulnerability,,https://nvd.nist.gov/vuln/detail/CVE-2023-24998
+2026-04-09,02_vuln_n1_and_n2,commons-fileupload:commons-fileupload,1.4,CVE-2025-48976,MEDIUM,"Apache Commons FileUpload, Apache Commons FileUpload: FileUpload DoS via part headers",,https://nvd.nist.gov/vuln/detail/CVE-2025-48976
+2026-04-09,02_vuln_n1_and_n2,commons-io:commons-io,2.6,CVE-2024-47554,MEDIUM,Apache Commons IO: Possible denial of service attack on untrusted input to XmlStreamReader,,https://nvd.nist.gov/vuln/detail/CVE-2024-47554
+2026-04-09,02_vuln_n1_and_n2,commons-io:commons-io,2.6,CVE-2021-29425,LOW,Path Traversal and Improper Input Validation in Apache Commons IO,,https://nvd.nist.gov/vuln/detail/CVE-2021-29425
+2026-04-09,02_vuln_n1_and_n2,org.apache.commons:commons-lang3,3.8.1,CVE-2025-48924,LOW,Apache Commons Lang is vulnerable to Uncontrolled Recursion when processing long inputs,,https://nvd.nist.gov/vuln/detail/CVE-2025-48924
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2023-50164,LOW,Apache Struts vulnerable to path traversal,,https://nvd.nist.gov/vuln/detail/CVE-2023-50164
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2024-53677,MEDIUM,Apache Struts file upload logic is flawed,,https://nvd.nist.gov/vuln/detail/CVE-2024-53677
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2023-34396,LOW,Apache Struts vulnerable to memory exhaustion,,https://nvd.nist.gov/vuln/detail/CVE-2023-34396
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2023-41835,LOW,Apache Struts Improper Control of Dynamically-Managed Code Resources vulnerability,,https://nvd.nist.gov/vuln/detail/CVE-2023-41835
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2023-34149,LOW,Apache Struts vulnerable to memory exhaustion,,https://nvd.nist.gov/vuln/detail/CVE-2023-34149
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2020-17530,LOW,Remote code execution in Apache Struts,,https://nvd.nist.gov/vuln/detail/CVE-2020-17530
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2025-68493,LOW,Apache Struts 2 is Missing XML Validation,,https://nvd.nist.gov/vuln/detail/CVE-2025-68493
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2025-66675,LOW,Apache Struts has a Denial of Service vulnerability,,https://nvd.nist.gov/vuln/detail/CVE-2025-66675
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2021-31805,LOW,Expression Language Injection in Apache Struts,,https://nvd.nist.gov/vuln/detail/CVE-2021-31805
+2026-04-09,02_vuln_n1_and_n2,org.apache.struts:struts2-core,2.5.25,CVE-2025-64775,LOW,Apache Struts is Vulnerable to DoS via File Leak,,https://nvd.nist.gov/vuln/detail/CVE-2025-64775

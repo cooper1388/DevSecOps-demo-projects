@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "Gradle Error (short):\n\n\n===== DEBUG INFORMATION START =====\n[COULD NOT RUN gradle -v]\n\n>>> command: cmd.exe /c gradle \"snykResolvedDepsJson\" \"-q\" \"--project-dir\" \"C:\\DevOpsAI\\supply_chain_agentic_v2\\supply_chain_agentic_v2\\proyecto_agentico\\benchmark\\benchmark-projects\\05_combined_n2_and_n3\" \"--no-daemon\" \"-Dorg.gradle.parallel=\" \"-Dorg.gradle.console=plain\" \"-PonlySubProject=.\" \"-I\" \"C:\\Users\\SELVIN~1\\AppData\\Local\\Temp\\tmp-18496-iYN525ZjispU--init.gradle\"\n>>> exit code: 1\n>>> stdout:\n\n>>> stderr:\n\"gradle\" no se reconoce como un comando interno o externo,\r\nprograma o archivo por lotes ejecutable.\r\n\n\n===== DEBUG INFORMATION END =====\n\nError running Gradle dependency analysis.\n\nPlease ensure you are calling the `snyk` command with correct arguments.\nIf the problem persists, contact support@snyk.io, providing the full error\nmessage from above, starting with ===== DEBUG INFORMATION START =====.",
+  "path": "C:\\DevOpsAI\\supply_chain_agentic_v2\\supply_chain_agentic_v2\\proyecto_agentico\\benchmark\\benchmark-projects\\05_combined_n2_and_n3"
+}

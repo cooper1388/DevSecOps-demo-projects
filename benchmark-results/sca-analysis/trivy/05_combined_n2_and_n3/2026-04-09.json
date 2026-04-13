@@ -1,0 +1,10 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d7418-75b6-703f-8c7a-7077224d616b",
+  "CreatedAt": "2026-04-09T15:14:13.3020162-06:00",
+  "ArtifactName": "c:/DevOpsAI/supply_chain_agentic_v2/supply_chain_agentic_v2/proyecto_agentico/benchmark/benchmark-projects/05_combined_n2_and_n3",
+  "ArtifactType": "filesystem"
+}

@@ -1,0 +1,5 @@
+scan_date,project,package,version,cve_id,severity,title,fix_version,url
+2026-04-09,06_deep_transitive_n4,commons-collections:commons-collections,3.2.1,CVE-2015-7501,CRITICAL,apache-commons-collections: InvokerTransformer code execution during deserialisation,3.2.2,https://avd.aquasec.com/nvd/cve-2015-7501
+2026-04-09,06_deep_transitive_n4,commons-collections:commons-collections,3.2.1,CVE-2015-6420,HIGH,Insecure Deserialization in Apache Commons Collection,3.2.2,https://avd.aquasec.com/nvd/cve-2015-6420
+2026-04-09,06_deep_transitive_n4,commons-io:commons-io,2.6,CVE-2024-47554,HIGH,apache-commons-io: Possible denial of service attack on untrusted input to XmlStreamReader,2.14.0,https://avd.aquasec.com/nvd/cve-2024-47554
+2026-04-09,06_deep_transitive_n4,commons-io:commons-io,2.6,CVE-2021-29425,MEDIUM,apache-commons-io: Limited path traversal in Apache Commons IO 2.2 to 2.6,2.7,https://avd.aquasec.com/nvd/cve-2021-29425

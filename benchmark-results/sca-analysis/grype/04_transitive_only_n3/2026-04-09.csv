@@ -1,0 +1,6 @@
+scan_date,project,package,version,cve_id,severity,title,fix_version,url
+2026-04-09,04_transitive_only_n3,commons-beanutils,1.9.3,CVE-2025-48734,HIGH,Apache Commons Improper Access Control vulnerability,1.11.0,
+2026-04-09,04_transitive_only_n3,commons-beanutils,1.9.3,CVE-2014-0114,HIGH,Arbitrary code execution in Apache Commons BeanUtils,1.9.4,
+2026-04-09,04_transitive_only_n3,commons-beanutils,1.9.3,CVE-2019-10086,HIGH,Insecure Deserialization in Apache Commons Beanutils,1.9.4,
+2026-04-09,04_transitive_only_n3,commons-collections,3.2.1,CVE-2015-7501,CRITICAL,Deserialization of Untrusted Data in Apache commons collections,3.2.2,
+2026-04-09,04_transitive_only_n3,commons-collections,3.2.1,CVE-2015-6420,CRITICAL,Insecure Deserialization in Apache Commons Collection,3.2.2,

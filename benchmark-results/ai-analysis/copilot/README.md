@@ -1,8 +1,8 @@
 # CVE Analysis — Benchmark Projects Summary
 
-**Scan Date:** 2026-04-03  
-**Tool:** GitHub Copilot + appmod-validate-cves-for-java (GitHub Security Advisories)  
-**Analyst:** GitHub Copilot (Claude Sonnet 4.6)  
+**Scan Date:** 2026-04-03 (original), 2026-04-09 (revalidation)  
+**Tool:** GitHub Copilot Chat (VS Code extension)  
+**Model:** Claude Haiku 4.5 (identified in Copilot response metadata)  
 **Scope:** 7 benchmark projects under `benchmark-projects/`
 
 ---
@@ -13,12 +13,17 @@
 |---|---|:---:|:---:|:---:|:---:|:---:|
 | [01_direct_vuln_n1](./01_direct_vuln_n1/README.md) | Vulnerabilidades directas (N1) | **6** | 3 | 1 | 2 | 0 |
 | [02_vuln_n1_and_n2](./02_vuln_n1_and_n2/README.md) | Vulnerabilidades N1 + N2 transitivas | **32** | 4 | 25 | 3 | 0 |
-| [03_transitive_only_n2](./03_transitive_only_n2/README.md) | Solo transitivas de 1er nivel (N2) | **42** | 3 | 22 | 17 | 0 |
-| [04_transitive_only_n3](./04_transitive_only_n3/README.md) | Solo transitivas de 2do nivel (N3) | **5** | 1 | 4 | 0 | 0 |
-| [05_combined_n2_and_n3](./05_combined_n2_and_n3/README.md) | Combinado N2 + N3 (Gradle) | **61** | 12 | 42 | 7 | 0 |
-| [06_deep_transitive_n4](./06_deep_transitive_n4/README.md) | Transitivas profundas (N4) | **4** | 1 | 2 | 1 | 0 |
+| [03_transitive_only_n2](./03_transitive_only_n2/README.md) | Solo transitivas de 1er nivel (N2) | **38** | 3 | 20 | 15 | 0 |
+| [04_transitive_only_n3](./04_transitive_only_n3/README.md) | Solo transitivas de 2do nivel (N3) | **6** | 1 | 5 | 0 | 0 |
+| [05_combined_n2_and_n3](./05_combined_n2_and_n3/README.md) | Combinado N2 + N3 (Gradle) | **65** | 12 | 46 | 7 | 0 |
+| [06_deep_transitive_n4](./06_deep_transitive_n4/README.md) | Transitivas profundas (N4) | **10** | 2 | 5 | 3 | 0 |
 | [07_unmaintained_repos](./07_unmaintained_repos/README.md) | Repositorios abandonados | **0** | 0 | 0 | 0 | 0 |
-| **TOTAL** | | **150** | **24** | **96** | **30** | **0** |
+| **TOTAL** | | **157** | **25** | **102** | **30** | **0** |
+
+> **Note**: Original scan (2026-04-03) detected 150 CVEs. Revalidation
+> (2026-04-09) with identical prompts detected 157 CVEs. Differences:
+> P03 -4 (truncation), P04 +1 (new CVE), P05 +4 (jackson-core 2025),
+> P06 +6 (broader depth analysis). Per-project CSVs contain original data.
 
 ---
 

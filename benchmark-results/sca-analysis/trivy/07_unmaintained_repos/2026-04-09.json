@@ -1,0 +1,131 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.69.3"
+  },
+  "ReportID": "019d7418-7b3d-7e19-af3e-e202e60cc5ae",
+  "CreatedAt": "2026-04-09T15:14:14.717924-06:00",
+  "ArtifactName": "c:/DevOpsAI/supply_chain_agentic_v2/supply_chain_agentic_v2/proyecto_agentico/benchmark/benchmark-projects/07_unmaintained_repos/pom.xml",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "pom.xml",
+      "Class": "lang-pkgs",
+      "Type": "pom",
+      "Packages": [
+        {
+          "ID": "com.benchmark:repo-sin-mantenimiento:1.0.0::a62a5bbe",
+          "Name": "com.benchmark:repo-sin-mantenimiento",
+          "Identifier": {
+            "PURL": "pkg:maven/com.benchmark/repo-sin-mantenimiento@1.0.0",
+            "UID": "4f5b365b4f0d744"
+          },
+          "Version": "1.0.0",
+          "Relationship": "root",
+          "DependsOn": [
+            "com.google.code.findbugs:jsr305:3.0.2::93252944",
+            "com.thoughtworks.paranamer:paranamer:2.8::3c061f44",
+            "net.jcip:jcip-annotations:1.0::db2de115",
+            "net.sf.opencsv:opencsv:2.3::8e335d96",
+            "oro:oro:2.0.8::a0d32380"
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.google.code.findbugs:jsr305:3.0.2::93252944",
+          "Name": "com.google.code.findbugs:jsr305",
+          "Identifier": {
+            "PURL": "pkg:maven/com.google.code.findbugs/jsr305@3.0.2",
+            "UID": "2d55f43f8d483aa0"
+          },
+          "Version": "3.0.2",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 31,
+              "EndLine": 35
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "com.thoughtworks.paranamer:paranamer:2.8::3c061f44",
+          "Name": "com.thoughtworks.paranamer:paranamer",
+          "Identifier": {
+            "PURL": "pkg:maven/com.thoughtworks.paranamer/paranamer@2.8",
+            "UID": "7108c9cbb98a58f1"
+          },
+          "Version": "2.8",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 49,
+              "EndLine": 53
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "net.jcip:jcip-annotations:1.0::db2de115",
+          "Name": "net.jcip:jcip-annotations",
+          "Identifier": {
+            "PURL": "pkg:maven/net.jcip/jcip-annotations@1.0",
+            "UID": "e0bdc9285ce7fb66"
+          },
+          "Version": "1.0",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 40,
+              "EndLine": 44
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "net.sf.opencsv:opencsv:2.3::8e335d96",
+          "Name": "net.sf.opencsv:opencsv",
+          "Identifier": {
+            "PURL": "pkg:maven/net.sf.opencsv/opencsv@2.3",
+            "UID": "56ec7c9c7a87e479"
+          },
+          "Version": "2.3",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 58,
+              "EndLine": 62
+            }
+          ],
+          "AnalyzedBy": "pom"
+        },
+        {
+          "ID": "oro:oro:2.0.8::a0d32380",
+          "Name": "oro:oro",
+          "Identifier": {
+            "PURL": "pkg:maven/oro/oro@2.0.8",
+            "UID": "3fbdbc545d774c75"
+          },
+          "Version": "2.0.8",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 22,
+              "EndLine": 26
+            }
+          ],
+          "AnalyzedBy": "pom"
+        }
+      ]
+    }
+  ]
+}

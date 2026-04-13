@@ -1,0 +1,2 @@
+scan_date,project,tool,model,total_cves,critical,high,medium,low
+2026-04-10,03_transitive_only_n2,M365 Copilot,GPT-5.4 Think Deeper,63,1,24,34,4

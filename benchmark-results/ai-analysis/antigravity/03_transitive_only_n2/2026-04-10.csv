@@ -1,0 +1,6 @@
+scan_date,project,tool,model,run,total_cves
+2026-04-10,03_transitive_only_n2,Google Antigravity,Gemini 3.1 Pro,1,65
+2026-04-10,03_transitive_only_n2,Google Antigravity,Gemini 3.1 Pro,2,64
+2026-04-10,03_transitive_only_n2,Google Antigravity,Gemini 3.1 Pro,3,65
+2026-04-10,03_transitive_only_n2,Google Antigravity,Gemini 3.1 Pro,4,63
+2026-04-10,03_transitive_only_n2,Google Antigravity,Gemini 3.1 Pro,5,69
