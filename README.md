@@ -301,10 +301,6 @@ This benchmark is the experimental basis for the following work:
 
 ---
 
-## License
-
-Apache-2.0 (see [`LICENSE`](LICENSE) file)
-
 ## Contact
 
 - Joseph Cooper -- kenny.cooper@uth.hn
